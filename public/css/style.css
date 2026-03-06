@@ -20,7 +20,7 @@
 	/* --- main colors */
 	
 
-  --color-primary-lightest-1: #ebf2ff5c;
+  --color-primary-lightest-1: #dee8f96c;
   --color-primary-lightest: #d2e2ff;
   --color-primary-light: #8eb7ff;
   --color-primary: #1c6fff;
@@ -52,6 +52,7 @@
 	
   --color-text: #030b1a;
   --color-text-lt: #f5f8ff;
+  --color-text-lt-blue: #dae5ff;
 	--color-text-secondary: #191009;
   --color-text-white: #fff;
   --color-text-muted: #fdc59d;
@@ -651,7 +652,7 @@ li a.header__nav--link:active	{
 .footer{
 	
 	padding: 3.2rem 4.8rem;
-	margin-top: 8rem;
+	/* margin-top: 8rem; */
 }
 
 
@@ -665,8 +666,8 @@ li a.header__nav--link:active	{
 .homePage__hero{	
 	width: 100vw;
   margin-left: calc(-50vw + 50%);
-	background-color: #fff;
-	background-image: radial-gradient(circle, #ecf3ff, 1px, transparent 1px);
+	/* background-color: #fff; */
+	background-image: radial-gradient(circle, #d7e2f5, 1px, transparent 1px);
 	background-size: 10px 10px;
 	
 }
@@ -887,10 +888,7 @@ li a.header__nav--link:active	{
 	margin-bottom: var(--mrg-xxlg)
 }
 
-.services__content-box{
-	
-	height: 30rem;
-} 
+
 
 .homePage__services--grid{
 	
@@ -1154,16 +1152,17 @@ li a.header__nav--link:active	{
 		width: 100vw;
   margin-left: calc(-50vw + 50%);
 
-	/* height: 52rem; */
-	height: 44rem;
+	height: 46rem;
+
 	background-image:  linear-gradient(90deg,
       rgba(255,255,255,0.3) 0%,
       rgba(255,255,255,0.2) 55%,
       rgba(255,255,255,0.4) 100%
     ), url('/img/imgs/bargara.jpg');
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
 	background-repeat: none;
+
 
 	
 }
@@ -1300,46 +1299,100 @@ li a.header__nav--link:active	{
 
 /* //----						Services Page 					----// */
 
-	.servicesPage-heading-box{
-		
-		padding: 4.8rem 0 5.4rem;
-		
-		text-align: center;
-		
-		font-size: var(--text-h3);
-		
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-		
-	}
+.servicesPage-block{
+	
+	
+	background-color: var(--color-primary-lightest-1);
+	padding-bottom: 3.2rem;
+}
 
 
-	.servicesPage-heading-box p{
-		
-		font-size: var(--text-xlg);
-	}
+.servicesPage-heading-box{
+	
+	padding: 6.4rem 0;
+	
+	text-align: center;
+	
+	font-size: var(--text-h3);
+	
+	display: flex;
+	flex-direction: column;
+	gap: 2.6rem;
+	
+	
+	color: var(--color-text);
+	
 
 	
-	.servicesPage-heading-box p:last-child{
-		
-		font-size: var(--text-body);
-		color: var(--color-text-muted-dk);
-	}
+}
 
 
-
-.servicesPage-heading-box a:link,
-.servicesPage-heading-box a:visited{
+.servicesPage-heading-box p{
 	
+	font-size: var(--text-lg);
+}
+
+
+.servicesPage-heading-box p:last-child{
+	
+	font-size: var(--text-body);
+	color: var(--color-text-muted-dk);
+	
+}
+	
+.servicesPage-underline{
+	width: 12.5%;
+	height: .4rem;
+	border: 0;
+	background: var(--color-secondary);
+	border-radius: 999px;
+	margin: .65rem auto 0;
+	
+}
+		.servicesPage--link{
+			
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-top: 4.8rem;
+			
+			flex-direction: column;
+			gap: 4.8rem;
+		}
+		
+		
+.servicePages--img{
+	
+	width: 28rem;
+}
+		
+		
+.servicePages--img-tablet{
+	
+	width: 14rem;
+}
+		
+	
+.servicesPage--link p{
+	
+	font-size: var(--text-small);
+	color: var(--color-text-muted-dk);
+	
+}
+
+.servicesPage--link a:link,
+.servicesPage--link a:visited{
+
 	
 	text-decoration: none;
 	font-size: var(--text-body);
-	color: var(--color-text);
+	color: #fff;
 	
-	background-color: var(--color-secondary);
+	background-color: var(--color-primary);
 	
 	padding: 1rem 1.6rem;	
+	
+	border-radius: 4px;
 }
 
 
@@ -1350,23 +1403,49 @@ li a.header__nav--link:active	{
 	max-width: 120rem;
 	
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(25rem , 32.5rem));	
+	grid-template-columns: repeat(auto-fit, minmax(25rem , 33.5rem));	
 	justify-content: center;
-	gap: 4rem;
+	gap: 6rem;
 }
+
+.serviceCardLink{
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 16px; /* match your card */
+}
+
+.serviceCardLink:focus-visible{
+	outline: 3px solid rgba(37,99,235,.35);
+	outline-offset: 4px;
+}
+
+.serviceCardLink:hover .servicePage--box{
+	transform: translateY(-4px);
+		box-shadow: 4px 6px 48px rgba(42, 57, 93, 0.25);
+}
+
+
 
 
 .servicePage--box{
 	
 	display: flex;
 	flex-direction: column;
-	gap: 4rem;
+	gap: 4.2rem;
 	
-	padding: 2.4rem;
+	padding: 3.2rem 2.4rem;
 	
-	background-color: var(--color-primary-lightest);
+	background-color: #fff;
 	
-	border: 2px solid var(--color-dk-bg);
+	border-radius: 12px;
+	
+	box-shadow: 2px 4px 12px rgba(42, 57, 93, 0.1);
+	
+	transition: transform .2s ease, box-shadow .2s ease;
+
+
+
 }
 
 .servicePage--box-heading--icon, .servicePage--box-heading--text{
@@ -1374,6 +1453,21 @@ li a.header__nav--link:active	{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+
+.servicesPage-icon{
+
+	
+	padding: 2.2rem;
+	
+	background-color:var(--color-primary-lightest);;
+	
+	border-radius: 50%;
+	
+	box-shadow: 3px 6px 12px rgba(15, 23, 42, .15);
+	
+	margin-bottom: .75rem;
 }
 
 .servicePage--box-heading--box{
@@ -1393,24 +1487,52 @@ li a.header__nav--link:active	{
 
 
 .servicePage--box-details--box p{
-	font-size: var(--text-body);
+	font-size: 1.3rem;
 	text-align: center;
-	margin-bottom: 3.2rem;
+	margin-bottom: 0;			/* remove the current 3.2rem */
+	min-height: 4em;	
+	color: var(--color-text-muted-dk);
 	
 	
 }
 
 .servicePage--box-details--box ul{
 	
-	
-	font-size: var(--text-body);
 	list-style: none;
-	margin-bottom: 3.2rem;
+	
+	margin-top: 1.6rem;	
+
 	display: flex;
 	flex-direction: column;
-	gap: .5rem;
+	gap: .75rem;
+	padding-left: .75rem;
 	
 }
+
+
+.servicePage--box-includes li{
+	font-size:1.2rem;
+	position: relative;
+	padding-left: 2.4rem;
+
+
+	line-height: 1.35;
+}
+
+.servicePage--box-includes li::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	
+	width: 1.4rem;
+	height: 1.4rem;
+
+	background-image: url("/img/icons/check-orange.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
 
 .servicePage--box-details--box-link{
 	

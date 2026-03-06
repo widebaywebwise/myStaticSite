@@ -3,71 +3,84 @@ extends base
 
 block content 
 
-	main.container
+	main.servicesPage-block
 	
 		section.servicesPage
-		
-			.servicesPage-heading-box
+			
+			.servicesPage-heading-box.container
+				.servicesPage-heading-box-underline
 
-				h2.servicesPage--heading Services
+					h2.servicesPage--heading Services
+					hr.servicesPage-underline
 				p Clean, fast websites for local businesses — no WordPress, no templates.
-				.servicesPage--link
-					a(href="#" class='services-cta')  Take Your First Step ▶
+
 				p Local support • Built for you • You own it
 				
-		section.servicesPage-boxes
+
+				
+			
+			
+			
+		section.servicesPage-boxes.container
 		
 			.servicePage--grid
-			
-				.servicePage--box
-			
-					.servicePage--box-heading--box
-						.servicePage--box-heading--icon
-							img(src="/img/icons/scroll.svg" class="servicesPage-icon" alt="")
-						.servicePage--box-heading--text
-							h3.servicePage--box-heading One-Page Starter Site
+				a.serviceCardLink(href="/static/contact#contact-form")
+					.servicePage--box
+				
+						.servicePage--box-heading--box
+							.servicePage--box-heading--icon
+								img(src="/img/icons/scroll.svg" class="servicesPage-icon" alt="")
+							.servicePage--box-heading--text
+								h3.servicePage--box-heading One-Page Starter Site
 
-					.servicePage--box-details--box
-						p.servicePage--box-details For tradies/solo operators that need something live quickly.
-						ul.servicePage--box-includes
-							li Mobile-first layout
-							li Contact form
-							li Basic SEO setup
-						.servicePage--box-details--box-link
-							a.servicePage--box-link(href="/static/contact") Ask about this →
-			
-				.servicePage--box
-			
-					.servicePage--box-heading--box
-						.servicePage--box-heading--icon
-							img(src="/img/icons/files.svg" class="servicesPage-icon" alt="")
-						.servicePage--box-heading--text
-							h3.servicePage--box-heading Multi-Page Business Site
+						.servicePage--box-details--box
+							p.servicePage--box-details For tradies/solo operators that need something live quickly.
+							ul.servicePage--box-includes
+								li Click-to-call + enquiry form
+								li Clear services + service area shown
+								li Looks great on phones
 
-					.servicePage--box-details--box
-						p.servicePage--box-details For businesses with multiple services or a bigger pitch.
-						ul.servicePage--box-includes
-							li Mobile-first layout
-							li Contact form
-							li Basic SEO setup
-						.servicePage--box-details--box-link
-							a.servicePage--box-link(href="/static/contact") Ask about this →
-			
-				.servicePage--box
-			
-					.servicePage--box-heading--box
-						.servicePage--box-heading--icon
-							img(src="/img/icons/magnifying-glass.svg" class="servicesPage-icon" alt="")
-						.servicePage--box-heading--text
-							h3.servicePage--box-heading Local SEO Setup
 
-					.servicePage--box-details--box
-						p.servicePage--box-details For businesses that want to show up in local search.
-						ul.servicePage--box-includes
-							li Mobile-first layout
-							li Contact form
-							li Basic SEO setup
-						.servicePage--box-details--box-link
-							a.servicePage--box-link(href="/static/contact") Ask about this →
-						
 			
+				a.serviceCardLink(href="/static/contact#contact-form")
+					.servicePage--box
+				
+						.servicePage--box-heading--box
+							.servicePage--box-heading--icon
+								img(src="/img/icons/files.svg" class="servicesPage-icon" alt="")
+							.servicePage--box-heading--text
+								h3.servicePage--box-heading Multi-Page Business Site
+
+						.servicePage--box-details--box
+							p.servicePage--box-details For businesses with multiple services or a bigger pitch.
+							ul.servicePage--box-includes
+								li Separate pages for each service
+								li Stronger trust pages (About / FAQs)
+								li Better Google visibility (more pages to rank)
+
+			
+				a.serviceCardLink(href="/static/contact#contact-form")
+					.servicePage--box
+			
+						.servicePage--box-heading--box
+							.servicePage--box-heading--icon
+								img(src="/img/icons/database.svg" class="servicesPage-icon" alt="")
+							.servicePage--box-heading--text
+								h3.servicePage--box-heading Dynamic Website
+
+						.servicePage--box-details--box
+							p.servicePage--box-details For businesses that need bookings, listings, or content that updates.
+							ul.servicePage--box-includes
+								li Editable content (services, pricing, posts)
+								li Enquiries that save (database)
+								li Optional upgrades (accounts, payments)
+								
+		section.servicesPage-included.container
+		
+			
+
+		section.servicesPage-cta.container
+			.servicesPage--link
+				p All sites include SEO foundations, mobile-friendly design, and fast loading.
+			
+				a.header__cta-link(href="#")  Take Your First Step ▶
