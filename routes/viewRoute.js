@@ -32,13 +32,13 @@ router.get('/static/services', viewController.getServicesPage);
 
 // /// Portfolio
 
-router.get('/static/portfolio', viewController.getPortfolioPage);
+router.get('/static/about', viewController.getPortfolioPage);
 
 
 
 // /// About
 
-router.get('/static/about', viewController.getAboutPage);
+// router.get('/static/about', viewController.getAboutPage);
 
 
 

@@ -31,6 +31,9 @@
 	/* --- Accent --- */
 	
   --color-secondary: #fc9e5b;
+  --color-secondary-lt: #feae75;
+  --color-secondary-ltest: #fffaf7;
+  --color-secondary-dker: #e38e52;
   --color-secondary-dk: #ca7e49;
 	
 	--color-surface-layer: #FFFBF2; /* for cards / div boxes on top of bg*/
@@ -50,7 +53,8 @@
 	
   /* --color-text: #141004; */
 	
-  --color-text: #030b1a;
+  
+  --color-text: #071c40;
   --color-text-lt: #f5f8ff;
   --color-text-lt-blue: #dae5ff;
 	--color-text-secondary: #191009;
@@ -321,6 +325,8 @@ body{
 	display: flex;
 	flex-direction: column;
 	min-height: 100dvh;
+	
+	color: var(--color-text);
 	
 }
 
@@ -885,7 +891,8 @@ li a.header__nav--link:active	{
 .homePage__services{
 	
 	
-	margin-bottom: var(--mrg-xxlg)
+	margin-bottom: var(--mrg-xxlg);
+		color: var(--color-text);
 }
 
 
@@ -1554,6 +1561,202 @@ li a.header__nav--link:active	{
 	padding: 1rem 1.6rem;	
 	
 }
+
+
+
+
+/* //----						about Page 					----// */
+
+
+.aboutPage{
+
+	padding-top: 6rem;
+	
+	margin-bottom: 8rem;
+	
+}
+
+.aboutPage-heading--grid{
+	
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 9rem;
+}
+
+
+.aboutPage-heading--box{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	gap: 3rem;
+	
+	color: var(--color-text);
+	
+}
+
+	
+	
+.aboutPage-heading--box h2{
+	
+	font-size:4rem;
+	font-weight: 700;	
+}
+	
+
+.aboutPage-heading--box h3{
+	
+	font-size: var(--text-xxlg);
+	
+	line-height: 1.2;	
+}
+
+	
+.aboutPage-heading--box span{
+	
+	color: var(--color-secondary-dker);
+}
+	
+
+.aboutPage-heading--box--text{
+	
+	display: flex;	
+	flex-direction: column;	
+	gap: 1.2rem;	
+	/* margin-bottom: 1rem; */
+}
+
+	
+.aboutPage-heading--box--text p{	
+	
+	font-size: var(--text-body);
+	color: var(--color-text-muted-dk);
+	line-height: 1.2;
+}
+
+
+
+		
+.aboutPage-list--box{	
+
+	padding:1.4rem 0;
+	
+	box-shadow: 1px 1px 32px rgba(15, 23, 42, .17);
+	
+	margin-top: -8px;
+	border-radius: 8px;	
+	background-color: var(--color-secondary-ltest);
+}
+		
+
+		
+		
+.aboutPage-list--box ul {
+	
+	list-style: none;
+	font-size: var(--text-small);
+	color: var(--color-text-muted-dkest);
+	
+	display: flex;
+	flex-direction: column;
+	gap: 1.4rem;
+	
+	padding:0 2rem;
+	
+}
+
+ 
+ 
+		
+
+
+.aboutPage-image--box{
+	
+	position: relative;
+}
+
+
+.aboutPage-image--box--1{
+	
+	width: 100%;
+	/* padding:0 4rem; */
+}
+
+
+.aboutPage-image--box--2{
+	
+	width: 25%;
+	background-color: var(--color-secondary-lt);
+	padding: .35rem;
+	border-radius: 6px;
+	position: absolute;
+	
+	bottom:0;
+	right: 0;
+	
+	outline: 2px solid #fff;
+}
+
+
+.aboutPage--img{
+	
+	width: 100%;
+	
+	border-radius: 12px;
+	
+	box-shadow: 1px 4px 24px rgba(15, 23, 42, .3);
+	
+	outline: 3px solid #fff;
+
+}
+
+
+.aboutPage--img-2{
+	
+	width: 100%;
+}
+
+	.aboutPage-list--box--list li strong{
+			
+		font-weight: 500;
+		margin-left: .85rem;
+	}
+	
+	.about-icon{
+		
+		
+		width: 2rem;
+	}
+
+	.aboutPage-list--box--list li{
+		
+		/* position: relative;
+		padding-left: 2.4rem; */
+		
+		display: flex;
+		align-items: center;
+		
+		
+		}
+		
+/* 
+	.aboutPage-list--box--list li::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 1px;
+		
+		width: 1.5rem;
+		height: 1.5rem;
+
+		background-image: url("/img/icons/check-orange.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	} */
+
 
 /* //----						Login Page 					----// */
 
