@@ -649,7 +649,10 @@ li a.header__nav--link:active	{
 }
 
 
-.header__cta-link{
+.header__cta-link:link,
+.header__cta-link:visited{
+	
+	display: inline-block;
 	
 	padding: .65rem 1.2rem;
 	
@@ -661,8 +664,22 @@ li a.header__nav--link:active	{
 	
 	border-radius: 4px;
 	
-	box-shadow: 1px 1px 2px var(--color-primary-dark);
+	box-shadow: 4px 6px 24px rgba(42, 57, 93, 0.2);
 	
+	transition: all .2s;
+	
+}
+
+
+
+.header__cta-link:hover,
+.header__cta-link:active{
+	
+	background-color: var(--color-secondary);	
+	color: var(--color-text);
+	
+	transform: scale(1.05) translateY(-3%);	
+	box-shadow: 4px 6px 24px rgba(42, 57, 93, 0.3);
 }
 
 
@@ -695,7 +712,7 @@ li a.header__nav--link:active	{
 	
 	display: flex;
 	flex-direction: column;
-	gap: .5rem;
+	gap: .8rem;
 	
 	font-size: 1.3rem;
 	
@@ -880,8 +897,23 @@ li a.header__nav--link:active	{
 	
 	border-radius: 6px;
 	
-	box-shadow: 1px 1px 2px var(--color-primary-dark);
+
+	box-shadow: 4px 6px 24px rgba(42, 57, 93, 0.2);
 	
+	transition: all .2s;
+	
+	
+}
+
+
+.homePage__cta:hover,
+.homePage__cta:active{
+	
+	background-color: var(--color-secondary);	
+	color: var(--color-text);
+	
+	transform: scale(1.06) translateY(-3%);	
+	box-shadow: 4px 6px 24px rgba(42, 57, 93, 0.35);
 	
 }
 
@@ -1004,8 +1036,8 @@ li a.header__nav--link:active	{
 
 .homePage__services--grid-box{
 	
-
-  display: grid;
+	
+	display: grid;
   grid-template-rows: auto auto 1fr;
   row-gap: 1rem;
   padding: 2.4rem 2rem 2rem;
@@ -1016,6 +1048,19 @@ li a.header__nav--link:active	{
 	 box-shadow: var(--shadow-md);
 	 
 	 height:26rem;
+	 
+	 transition: all .2s;
+	 
+	 cursor: pointer;
+	
+}
+
+
+.homePage__services--grid-box:hover{
+	
+	transform: scale(1.02) translateY(-1%);
+	
+		box-shadow: 2px 4px 32px rgba(42, 57, 93, 0.25);	
 	
 }
 
@@ -1249,16 +1294,18 @@ li a.header__nav--link:active	{
 	width: 100vw;
   margin-left: calc(-50vw + 50%);
 
-	/* height: 46rem; */
-	padding: 2.4rem 0 14rem;
+	height: 34rem;
+	padding: 2.4rem 0 12rem;
 
 	background-image:  linear-gradient(90deg,
-      rgba(255,255,255,0.3) 0%,
-      rgba(255,255,255,0.2) 55%,
-      rgba(255,255,255,0.4) 100%
+      rgba(255,255,255,0.2) 0%,
+      rgba(255,255,255,0.1) 55%,
+      rgba(255,255,255,0.3) 100%
     ), url('/img/imgs/bargara.jpg');
 	background-size: cover;
 	background-position: center;
+	
+	margin-bottom: 2rem;
 	
 	
 }
@@ -1323,6 +1370,8 @@ li a.header__nav--link:active	{
 	justify-content: center;
 }
 
+
+
 .banner-cta:link,
 .banner-cta:visited{
 	display: inline-block;
@@ -1334,6 +1383,15 @@ li a.header__nav--link:active	{
 	
 	color: #fff;
 	
+	transition: all .2s;
+	
+}
+
+.banner-cta:hover,
+.banner-cta:active{
+	
+	
+	transform: scale(1.08) translateY(-8%);
 	
 }
 
@@ -1482,11 +1540,7 @@ li a.header__nav--link:active	{
 .servicesPage--link a:visited{
 
 	
-	text-decoration: none;
-	font-size: var(--text-body);
-	color: #fff;
-	
-	background-color: var(--color-primary);
+
 	
 	padding: 1rem 1.6rem;	
 	
@@ -1538,7 +1592,7 @@ li a.header__nav--link:active	{
 	
 	border-radius: 12px;
 	
-	box-shadow: 2px 4px 12px rgba(42, 57, 93, 0.1);
+	box-shadow: 2px 4px 12px rgba(42, 57, 93, 0.16);
 	
 	transition: transform .2s ease, box-shadow .2s ease;
 
@@ -2163,30 +2217,52 @@ li.portfolio--skills-list-item{
 	color: inherit;	
 }
 
+
+.portfolio--featured--link a:link,
+.portfolio--featured--link a:visited,
+.portfolio--featured--link-secondary a:link,
+.portfolio--featured--link-secondary a:visited{
+	
+	background-color: var(--color-secondary-lt);	
+	font-weight: 500;
+	
+	transition: all .2s;
+	
+	}
+	
+
 .portfolio--featured--link a:link,
 .portfolio--featured--link a:visited{
 	
 	font-size: var(--text-lg);	
-	font-weight: 500;
+
 	padding: 1rem 4rem;
-	background-color: var(--color-secondary-lt);	
-	
-	
 	
 }
-
-
 
 .portfolio--featured--link-secondary a:link,
-.portfolio--featured--link-secondary a:visited{
-	
+.portfolio--featured--link-secondary a:visited{	
 	
 	font-size: 1.3rem;	
-	font-weight: 500;
 	padding: .6rem 1.6rem;
-	background-color: var(--color-secondary-lt);	
 	
 }
+
+
+.portfolio--featured--link a:hover,
+.portfolio--featured--link a:active,
+.portfolio--featured--link-secondary a:hover,
+.portfolio--featured--link-secondary a:active{
+	
+	background-color: var(--color-primary);
+	color:#fff;
+	
+	/* transform: scale(1.05) translateY(-3%); */
+
+}
+
+
+
 	
 .portfolio--image-box-featured,	.portfolio--image-box-secondary {
 	
@@ -2257,11 +2333,7 @@ li.portfolio--skills-list-item{
 	
 	
 .portfolio--status-badge-secondary p , 	.portfolio--status-badge-secondary-building p{
-/* 	
-	position: absolute;
-	top:10px;
-	right: 14px;
-	 */
+
 	
 	padding: .25rem .65rem;
 	border-radius: 10px;
@@ -2372,13 +2444,14 @@ color: var(--color-text);
 .contact-form-grid{
 		
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	/* grid-template-columns: 1fr 1fr; */
+	grid-template-columns: 3fr 4fr;
 	
 	background-color: var(--color-primary-lightest);
 	
 	border-radius: 18px;
 	overflow: hidden;
-	box-shadow: 2px 4px 18px rgba(14, 56, 128, 0.347);
+	/* box-shadow: 2px 4px 9px rgba(14, 56, 128, 0.2); */
 	
 }
 
@@ -2390,9 +2463,9 @@ color: var(--color-text);
 	object-fit: cover;
 	display: block;
 	
-	aspect-ratio: 11/11;
+	aspect-ratio: 11/13;
 	
-	opacity: .8;	
+
 }
 
 
@@ -2456,16 +2529,30 @@ color: var(--color-text);
 
 
 .contact-form--btn {
-  border: none;
+	border: none;
   padding: 1rem 2.6rem;
- font-size: 1.4rem;
+	font-size: 1.4rem;
   font-weight: 600;
   border-radius: 8px;
   background-color: var(--color-secondary);
   color: var(--color-text-secondary);
   cursor: pointer;
+	
+	transition: all .2s;
 }
 
+.contact-form--btn:hover {
+	
+	
+	background-color: var(--color-primary);
+	color:#fff;
+	
+	transform: scale(1.03) translateY(-3%);
+	
+		box-shadow: 2px 4px 24px rgba(14, 56, 128, 0.25);
+	
+	
+}
 
 	
 /* //----						Login Page 					----// */
