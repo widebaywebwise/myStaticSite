@@ -462,7 +462,7 @@ h1, h2, h3, h4{
 		font-size: var(--text-xxlg);		
 		font-weight: 500;
 		
-		padding: 4rem 0;
+		padding: 4rem 0 6rem;
 	}
 	
 	
@@ -968,7 +968,7 @@ li a.header__nav--link:active	{
 .homePage__services{
 	
 	
-	margin-bottom: var(--mrg-xxlg);
+	margin-bottom: 9rem;
 		color: var(--color-text);
 }
 
@@ -1068,7 +1068,7 @@ li a.header__nav--link:active	{
 
   max-width: 140rem; /* same as your steps */
 	
-	margin-bottom: 12rem;
+	margin-bottom: 8rem;
 }
 
 .process__heading-box h2{
