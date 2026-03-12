@@ -1254,7 +1254,7 @@ li a.header__nav--link:active	{
 	
 	font-size: var(--text-xlg);
 	color: var(--color-text-muted-dk);
-	line-height: 1.55;
+	line-height: 1.35;
 	padding: 0 3rem;
 }
 
@@ -2368,7 +2368,7 @@ li.portfolio--skills-list-item{
 
 	
 	
-.portfolio--status-badge-secondary p , 	.portfolio--status-badge-secondary-building p{
+.portfolio--status-badge-secondary p , 	.portfolio--status-badge-secondary-building p , .portfolio--status-badge-secondary-soon  p{
 
 	
 	padding: .25rem .65rem;
@@ -2386,9 +2386,17 @@ li.portfolio--skills-list-item{
 	
 }
 
+
+
 	.portfolio--status-badge-secondary-building p{
 background-color: var(--color-text-lt-blue);
 color: var(--color-text);
+
+	}
+	
+	.portfolio--status-badge-secondary-soon p{
+background-color: var( --color-secondary-dker);
+color: #fff;
 
 	}
 	

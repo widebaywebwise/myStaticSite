@@ -27,19 +27,13 @@ process.on('uncaughtException', err => {
 const app = require('./app');
 
 
-
-
-
 mongoose.connect(process.env.CONNECTION_STRING)
 	.then(() => {
 
 		console.log(`DB Connected: ${process.env.NODE_ENV.toUpperCase()} MODE`);
 	})
 
-
-
 const port = process.env.PORT || 8000;
-
 
 app.listen(port, () => {
 
