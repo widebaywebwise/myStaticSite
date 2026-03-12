@@ -1824,7 +1824,10 @@ li a.header__nav--link:active	{
 }
 
  
- 
+ span.aboutList-remove {
+	
+	color: inherit;
+ }
 		
 
 
