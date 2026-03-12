@@ -1,7 +1,7 @@
 
-import { login, logout } from "./login";
+// import { login, logout } from "./login";
 
-import { signUpUser } from "./userSettings";
+// import { signUpUser } from "./userSettings";
 
 
 
@@ -28,67 +28,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ///-------------------- User Login / logout / Signup --------------///
 
-const loginBtn = document.querySelector('.login__form');
-const logoutBtn = document.querySelector('.logout--btn');
-const signupForm = document.querySelector('.signup__form');
+// const loginBtn = document.querySelector('.login__form');
+// const logoutBtn = document.querySelector('.logout--btn');
+// const signupForm = document.querySelector('.signup__form');
 
-const logoutAccountBtn = document.getElementById('my-account-logout');
-
-
-if (loginBtn) {
-
-	loginBtn.addEventListener('submit', e => {
-
-		e.preventDefault();
-
-		const email = document.getElementById('login-email').value;
-		const password = document.getElementById('login-password').value;
-
-		login(email, password);
-	})
-}
+// const logoutAccountBtn = document.getElementById('my-account-logout');
 
 
-if (logoutBtn) {
+// if (loginBtn) {
 
-	logoutBtn.addEventListener('click', e => {
+// 	loginBtn.addEventListener('submit', e => {
 
-		e.preventDefault();
+// 		e.preventDefault();
 
-		logout();
-	})
-}
+// 		const email = document.getElementById('login-email').value;
+// 		const password = document.getElementById('login-password').value;
 
-
-if (logoutAccountBtn) {
-
-	logoutAccountBtn.addEventListener('click', e => {
-
-		e.preventDefault();
-
-		logout();
-	})
-}
+// 		login(email, password);
+// 	})
+// }
 
 
-if (signupForm) {
+// if (logoutBtn) {
 
-	signupForm.addEventListener('submit', e => {
+// 	logoutBtn.addEventListener('click', e => {
 
-		e.preventDefault();
+// 		e.preventDefault();
 
-		const data = {
+// 		logout();
+// 	})
+// }
 
-			name: document.getElementById('signup-name').value,
-			email: document.getElementById('signup-email').value,
-			password: document.getElementById('signup-password').value,
-			passwordConfirm: document.getElementById('signup-passwordConfirm').value,
-			phone: document.getElementById('signup-phone').value
-		}
 
-		signUpUser(data);
-	})
-}
+// if (logoutAccountBtn) {
+
+// 	logoutAccountBtn.addEventListener('click', e => {
+
+// 		e.preventDefault();
+
+// 		logout();
+// 	})
+// }
+
+
+// if (signupForm) {
+
+// 	signupForm.addEventListener('submit', e => {
+
+// 		e.preventDefault();
+
+// 		const data = {
+
+// 			name: document.getElementById('signup-name').value,
+// 			email: document.getElementById('signup-email').value,
+// 			password: document.getElementById('signup-password').value,
+// 			passwordConfirm: document.getElementById('signup-passwordConfirm').value,
+// 			phone: document.getElementById('signup-phone').value
+// 		}
+
+// 		signUpUser(data);
+// 	})
+// }
 
 
 //--------------------  hamburger  -------------------//
