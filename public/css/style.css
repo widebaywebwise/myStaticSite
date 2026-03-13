@@ -932,10 +932,11 @@ li a.header__nav--link:active	{
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
-	}
+	
+	background: radial-gradient(circle at center 65%, #d2e2ff 0%, rgba(210, 226, 255, 0.65) 35%, rgba(210, 226, 255, 0.25) 60%, rgba(210, 226, 255, 0) 100%);
 	
 	
-	
+}
 	
 	.homePage__hero--img img {
 		
@@ -2277,7 +2278,9 @@ li.portfolio--skills-list-item{
 }
 
 .portfolio--featured--link-secondary a:link,
-.portfolio--featured--link-secondary a:visited{	
+.portfolio--featured--link-secondary a:visited,
+.portfolio--featured--link-disabled a:link,	
+.portfolio--featured--link-disabled a:visited{	
 	
 	font-size: 1.3rem;	
 	padding: .6rem 1.6rem;
@@ -2293,19 +2296,30 @@ li.portfolio--skills-list-item{
 	background-color: var(--color-primary);
 	color:#fff;
 	
-	/* transform: scale(1.05) translateY(-3%); */
+
 
 }
 
 
 
 	
-.portfolio--image-box-featured,	.portfolio--image-box-secondary {
+.portfolio--image-box-featured,	.portfolio--image-box-secondary, .portfolio--featured--link-disabled  {
 	
 	display: flex;
 	align-items: center;
 	justify-content: center;	
 }
+
+.portfolio--featured--link-disabled a:link,	
+.portfolio--featured--link-disabled a:visited{
+	
+	background-color: var(--color-text-muted-ltest);
+		display: inline-block;	
+	text-decoration: none;
+	color: var( --color-text-muted-dkest);
+
+	}
+
 
 
 
@@ -2395,7 +2409,7 @@ color: var(--color-text);
 	}
 	
 	.portfolio--status-badge-secondary-soon p{
-background-color: var( --color-secondary-dker);
+background-color: var(--color-secondary-dker);
 color: #fff;
 
 	}
