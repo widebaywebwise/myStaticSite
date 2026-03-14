@@ -675,7 +675,7 @@ li a.header__nav--link:active	{
 .footer{
 	
 	background-color: var(--color-primary-darkest);	
-	padding: 3.2rem 0 6.4rem;
+	padding: 2.8rem 0 6rem;
 	border-top: 2px solid rgba(171, 199, 250, 0.804);
 	
 	margin-top: 8rem;
@@ -721,6 +721,13 @@ li a.header__nav--link:active	{
 	color: inherit;		
 }	
 
+	.footer--logo-box--text{
+		
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+	}
+
 
 .footer--services-box p,
 .footer--links-box p,
@@ -729,7 +736,7 @@ li a.header__nav--link:active	{
 	font-size: var(--text-xlg);
 	font-weight: 600;
 	
-	margin-bottom: 1.2rem;
+	margin-bottom: 1.6rem;
 }	
 
 
@@ -739,13 +746,20 @@ li a.header__nav--link:active	{
 	flex-direction: column;
 	/* align-items: center; */
 	justify-content: center;
-	gap: .75rem;	
+	gap: 1.8rem;	
 }
+
+	.footer-text-p{
+		
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+	}
 
 
 .footer--logo-box img{
 	
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 }
 
 /* //------------						Home Page 					----------------// */
