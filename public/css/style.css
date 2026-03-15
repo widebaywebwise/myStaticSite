@@ -798,7 +798,7 @@ li a.header__nav--link:active	{
 	
 	display: grid;	
 	grid-template-columns: 1fr 1fr;
-  gap: 3.6rem;         
+  gap: 3rem;         
   padding: 6.8rem 2rem 2rem;	
 	
  }
@@ -1025,8 +1025,8 @@ li a.header__nav--link:active	{
 	
 	margin-top: 2.2rem;
 	font-weight: 500;
-	color: var( --color-text-muted);
-	font-size: 1.4rem;
+	color: var(--color-text-muted-dk);
+	font-size: 1.35rem;
 }
 
 
@@ -5769,16 +5769,16 @@ padding: 1.2rem .8rem ;
 
 @media (max-width: 26.5em) {
 	
-		.portfolio-grid {
+.portfolio-grid {
 		
 		padding: 0 6rem;
 		gap: 3.6rem;
 	}
 	
-	    .aboutPage {
-        padding-top: 3rem;
-       
-    }
+  .aboutPage {
+    padding-top: 3rem;
+   
+}
 		
 
 

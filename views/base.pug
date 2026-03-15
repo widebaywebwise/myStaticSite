@@ -10,12 +10,11 @@ html(lang="en")
 				gtag('js', new Date());
 				gtag('config', '#{gaMeasurementId}');
 		
-		//-- Google Tag Manager - do later (early load)
-		
+		//-- Google Tag Manager - do later (early load)		
 		
 		meta(charset='UTF-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
-		meta(name='description' content=pageDescription || 'Custom-built websites for local businesses in the Wide Bay region.')
+		meta(name='description' content=pageDescription || 'Custom web design and development for local businesses in Bundaberg, Hervey Bay, Maryborough and across the Wide Bay region. Fast, professional websites built from scratch.')
 		
 		
 		if noIndex
@@ -58,24 +57,22 @@ html(lang="en")
 			
 		link(rel='shortcut icon' type='image/png'  sizes="180x180"  href=favicon || '/img/favicons/defaultfavicon.png')
 		
-		title= pageTitle || 'Widebay Web Wise'
+		title= pageTitle || 'Wide Bay Web Designer & Developer | Widebay Web Wise'
 		
 		script(type="application/ld+json").
 			{
 				"@context": "https://schema.org",
-				"@type": "LocalBusiness",
+				"@type": "ProfessionalService",
 				"name": "Widebay Web Wise",
 				"description": "Custom-built websites for local businesses across the Wide Bay region, including Bundaberg, Hervey Bay, and Maryborough.",
 				"url": "https://www.widebaywebwise.com.au",
 				"telephone": "+61452210276",
 				"email": "widebaywebwise@gmail.com",
 				"address": {
-					"@type": "PostalAddress",
-					"streetAddress": "4 Shailers Circuit",
-					"addressLocality": "Thabeban",
-					"addressRegion": "QLD",
-					"postalCode": "4670",
-					"addressCountry": "AU"
+				  "@type": "PostalAddress",
+				  "addressLocality": "Bundaberg",
+				  "addressRegion": "QLD",
+				  "addressCountry": "AU"
 				},
 				"openingHours": "Mo-Su 08:30-20:00",
 				"areaServed": [
