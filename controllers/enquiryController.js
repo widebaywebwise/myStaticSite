@@ -12,10 +12,10 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		message: req.body.message
 	});
 
-	const url = `${req.protocol}://${req.get('host')}/`
+	// const url = `${req.protocol}://${req.get('host')}/`
 
 
-	await new Email(newEnquiry, url).enquiryEmail();
+	// await new Email(newEnquiry, url).enquiryEmail();
 
 	res.status(201).redirect('/enquiry-success');
 
