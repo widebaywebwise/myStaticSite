@@ -1,6 +1,6 @@
 const Enquiry = require('./../models/enquiryModel');
 const catchAsync = require('./../utilities/catchAsync');
-
+const Email = require('./../utilities/email');
 
 exports.createEnquiry = catchAsync(async (req, res, next) => {
 
@@ -12,5 +12,11 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		message: req.body.message
 	});
 
+	const url = `${req.protocol}://${req.get('host')}/`
+
+
+	await new Email(newEnquiry, url).enquiryEmail();
+
 	res.status(201).redirect('/enquiry-success');
+
 });

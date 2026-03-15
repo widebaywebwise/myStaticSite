@@ -10,7 +10,7 @@ module.exports = class Email {
 		this.firstname = user.name.split(' ')[0];
 
 		this.url = url;
-		this.from = `Mark Beresford ${process.env.EMAIL_FROM}`;
+		this.from = `${process.env.EMAIL_FROM_NAME} <${process.env.EMAIL_FROM}>`;
 	}
 
 
@@ -60,7 +60,7 @@ module.exports = class Email {
 				firstname: this.firstname,
 				url: this.url,
 				subject,
-				logoUrl: `${process.env.CANONICAL_URL}img/logo/default-logo.png`
+				logoUrl: `${process.env.CANONICAL_URL}/img/logo/og-image.jpg`
 			}
 		);
 
@@ -104,8 +104,11 @@ module.exports = class Email {
 	}
 
 
-	async accountChanges() {
+	async enquiryEmail() {
 
-		await this.send('accountChanges', 'Your account has been updated');
+		this.to = process.env.BUSINESS_EMAIL;
+		await this.send('enquiryEmail', 'You Received an Enquiry');
 	}
+
+
 }
