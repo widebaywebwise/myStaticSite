@@ -2448,6 +2448,14 @@ color: #fff;
 	margin-bottom: 4rem;
 	
 }
+
+	.portfolio--featured-preview{
+		
+		text-align: center;
+		font-size: var(--text-body);
+		padding-bottom: 2rem;
+	
+	}
 	
 	
 	
