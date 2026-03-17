@@ -1482,7 +1482,7 @@ li a.header__nav--link:active	{
 
 .servicesPage-heading-box{
 	
-	padding: 6.4rem 0;
+	padding: 7.2rem 0;
 	
 	text-align: center;
 	
@@ -1490,7 +1490,7 @@ li a.header__nav--link:active	{
 	
 	display: flex;
 	flex-direction: column;
-	gap: 2.6rem;
+	gap: 3rem;
 	
 	
 	color: var(--color-text);
@@ -1502,7 +1502,7 @@ li a.header__nav--link:active	{
 
 .servicesPage-heading-box p{
 	
-	font-size: var(--text-lg);
+	font-size: var(--text-xlg);
 }
 
 
@@ -1528,10 +1528,12 @@ li a.header__nav--link:active	{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 4.8rem;
+	padding-top: 6.4rem;
 	
 	flex-direction: column;
-	gap: 3.6rem;
+	gap: 2.6rem;
+	
+	
 }
 
 .servicesPage--link-pricing{
@@ -1568,6 +1570,7 @@ li a.header__nav--link:active	{
 	
 	font-size: 1.6rem;
 color: var(--color-text-muted-dk);
+margin-bottom: 1.8rem;
 }
 
 .servicePages--img{
@@ -1639,7 +1642,7 @@ color: var(--color-text-muted-dk);
 	
 	border-radius: 12px;
 	
-	box-shadow: 2px 4px 12px rgba(42, 57, 93, 0.16);
+	box-shadow: 1px 1px 32px rgba(42, 57, 93, 0.18);
 	
 	transition: transform .2s ease, box-shadow .2s ease;
 
@@ -1691,6 +1694,7 @@ color: var(--color-text-muted-dk);
 	margin-bottom: 0;			/* remove the current 3.2rem */
 	min-height: 4em;	
 	color: var(--color-text-muted-dk);
+	line-height: 1.2;
 	
 	
 }
