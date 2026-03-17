@@ -797,7 +797,7 @@ li a.header__nav--link:active	{
 	
 width: 100vw;
 	margin-left: calc(-50vw + 50%);
-	background-image: radial-gradient(circle, #e3ecffc9, 1.1px, transparent 1.1px);
+	background-image: radial-gradient(circle, #e3ecffa7, 1.1px, transparent 1.1px);
 	background-size: 10px 10px;
 	
 }
@@ -5977,7 +5977,7 @@ padding-left: 2.4rem;
 }
 
 .servicesPage-heading-box p:last-child {
-   font-size: 1.5rem;
+   font-size: 1.35rem;
 }
 
 		.portfolio-grid {
