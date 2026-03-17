@@ -788,9 +788,16 @@ li a.header__nav--link:active	{
 		}
 
 .homePage__hero , .servicesPage-block, .contact, .success-page{	
-	width: 100vw;
+	
+	
+	/* width: 100vw;
   margin-left: calc(-50vw + 50%);
 	background-image: radial-gradient(circle, #eaf1ffc9, 1px, transparent 1px);
+	background-size: 10px 10px; */
+	
+width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	background-image: radial-gradient(circle, #e3ecffc9, 1.1px, transparent 1.1px);
 	background-size: 10px 10px;
 	
 }
