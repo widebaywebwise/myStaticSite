@@ -16,7 +16,7 @@ block content
 					hr.contact-underline
 					
 				.contact-text-box
-					p Thinking about getting a website for your business? Fill out the form and tell us a little about what you do. If you’re starting from scratch and want a simple, professional online presence, this is a good place to begin.
+					p Thinking about getting a website for your business? Fill out the form below and share a few details about what you need.
 
 				
 			.contact-form-box
@@ -31,21 +31,22 @@ block content
 						form#contact--form(action="/api/v1/enquiries" method="POST" class='contact-form')
 						
 							.contact-form--row 
-								label(for="name") Name 
+								label(for="name") Your Name 
 								input(type="text" name='name' id='name')
 								
 							.contact-form--row 
-								label(for="email") Email 
+								label(for="email") Email Address
 								input(type="email" name='email' id='email') 
 								
 							.contact-form--row 
-								label(for="phone") Phone 
+								label(for="phone") Phone Number (Optional)
 								input(type="tel" name='phone' id='phone') 
 								
 															
 							.contact-form--row 
-								label(for="enquiry") Enquiry
-								select#enquiry(name="enquiry") 
+								label(for="enquiry") Enquiry Type
+								select#enquiry(name="enquiry")
+									option(value="" disabled selected) Select an enquiry type
 									option(value="general-enquiry") General enquiry
 									option(value="quick-qoute") Get a quick quote
 									option(value="new-website") New website
@@ -59,8 +60,10 @@ block content
 								textarea#message(name="message" rows="6" cols='52' placeholder="Tell us a little about your business and what you need...")
 							
 							.contact-form--submit-btn 
-								button(type='submit' , class='contact-form--btn') Submit
+								button(type='submit' , class='contact-form--btn') Send Enquiry
 														 
 
+							.contact-form-bottom 
+								p No obligation — just a clear reply and helpful advice on the best next step.
 				
 			
