@@ -3,7 +3,7 @@ extends baseEmail
 block content
 	header
 		.orderConfirm_header--img
-			img(src=logoUrl, alt="company-logo", width="260", style="display:block; width:260px; max-width:100%; height:auto; margin:0 auto;")
+			img(src=logoUrl, alt="company-logo", width="320", style="display:block; width:320px; max-width:100%; height:auto;")
 
 	main
 		.email_body
@@ -11,9 +11,10 @@ block content
 			p You have received a new enquiry through the website contact form.
 
 		.email_details
-			p name: #{name || ''}
-			p email: #{email || ''}
-			p enquiry: #{enquiry || ''}
-			p message: #{message || ''}
+			p Name: #{name || ''}
+			p Email: #{email || ''}
+			p Enquiry: #{enquiry || ''}
+			p Message: #{message || ''}
 			p Please log in and check Atlas for the full details.
-			a.mongoDb-link(href="https://cloud.mongodb.com/v2/69af83c83d0c45e3733962ca#/explorer/69af83fbf0f89025667964b1/widebaywebwise/enquiries/find") MongoDb Atlas
+			.mongoDb-link--box
+				a.mongoDb-link(href="https://cloud.mongodb.com/v2/69af83c83d0c45e3733962ca#/explorer/69af83fbf0f89025667964b1/widebaywebwise/enquiries/find") MongoDb Atlas
