@@ -55,16 +55,17 @@ style.
 				
 		.email_body h2{
 			
-			font-size:2.2rem;
+			font-size:2.4rem;
 		}
 	
 		
 		.email_body  , .email_details {
 			
-			font-size:1.8rem;
+			font-size:2rem;
 			
 			
 		}
+		
 		.email_body{
 			
 			display:grid;
@@ -77,22 +78,21 @@ style.
 		}
 		
 	  .email_details {
-			
-			display:flex;
-			flex-direction:column;
-			
+						
+			display:grid;
+			grid-template-rows:auto;
 			gap:2rem;
+			
+			margin-bottom: 2rem;
 		}
 		
 		
-		.mongoDb-link a:link,
-		.mongoDb-link a:visited{
-			
-			background-color:#feae75;
-			color:#071c40;
-			
-			text-decoration:none;
-			
-			
-			
-		}
+	a.mongoDb-link,
+	a.mongoDb-link:visited {
+		display: inline-block;
+		padding: .6rem 1rem;
+		background-color: #feae75;
+		color: #071c40;
+		text-decoration: none;
+		border-radius: 3px;
+	}
