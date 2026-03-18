@@ -4,6 +4,12 @@ const Email = require('./../utilities/emailClass');
 
 exports.createEnquiry = catchAsync(async (req, res, next) => {
 
+	/// Honeypot controller
+
+	if (req.body.website && req.body.website.trim() !== '') {
+
+		return res.redirect(303, '/enquiry-success');
+	}
 	const newEnquiry = await Enquiry.create({
 
 		name: req.body.name,

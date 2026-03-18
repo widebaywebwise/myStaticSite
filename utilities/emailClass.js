@@ -11,6 +11,12 @@ module.exports = class Email {
 
 		this.url = url;
 		this.from = `${process.env.EMAIL_FROM_NAME} <${process.env.EMAIL_FROM}>`;
+
+		this.name = user.name;
+		this.email = user.email;
+		this.phone = user.phone;
+		this.enquiry = user.enquiry;
+		this.message = user.message;
 	}
 
 
@@ -61,7 +67,7 @@ module.exports = class Email {
 		throw new Error(`Unsupported NODE_ENV value: ${process.env.NODE_ENV}`);
 	}
 
-	async send(template, subject) {
+	async send(template, subject, data = {}) {
 
 		try {
 			const transport = this.newTransport();
@@ -70,7 +76,8 @@ module.exports = class Email {
 					firstname: this.firstname,
 					url: this.url,
 					subject,
-					logoUrl: `${process.env.CANONICAL_URL}/img/logo/newLogo.png`
+					logoUrl: `${process.env.CANONICAL_URL}/img/logo/email-logo.png`,
+					...data
 				}
 			);
 
@@ -128,9 +135,15 @@ module.exports = class Email {
 
 
 	async enquiryEmail() {
-
 		this.to = process.env.BUSINESS_EMAIL;
-		await this.send('enquiryEmail', 'You Received an Enquiry');
+
+		await this.send('enquiryEmail', 'You Received an Enquiry', {
+			name: this.name,
+			email: this.email,
+			phone: this.phone,
+			enquiry: this.enquiry,
+			message: this.message
+		});
 	}
 
 

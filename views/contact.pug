@@ -29,26 +29,31 @@ block content
 					.contact-form--form
 					
 						form#contact--form(action="/api/v1/enquiries" method="POST" class='contact-form')
-						
+							if rateLimitError
+								p.contact-form__error= rateLimitError
 							.contact-form--row 
 								label(for="name") Your Name 
-								input(type="text" name='name' id='name')
+								input(type="text" name='name' id='name' required)
 								
 							.contact-form--row 
 								label(for="email") Email Address
-								input(type="email" name='email' id='email') 
+								input(type="email" name='email' id='email' required) 
 								
 							.contact-form--row 
 								label(for="phone") Phone Number (Optional)
-								input(type="tel" name='phone' id='phone') 
+								input(type="tel" name='phone' id='phone')
+							
+							.contactPage__form-row.contactPage__honeypot(aria-hidden="true")
+								label(for="website") Website
+								input(type="text" name="website" id="website" tabindex="-1" autocomplete="off")
 								
 															
 							.contact-form--row 
 								label(for="enquiry") Enquiry Type
-								select#enquiry(name="enquiry")
+								select#enquiry(name="enquiry" required)
 									option(value="" disabled selected) Select an enquiry type
 									option(value="general-enquiry") General enquiry
-									option(value="quick-qoute") Get a quick quote
+									option(value="quick-quote") Get a quick quote
 									option(value="new-website") New website
 									option(value="simple-business-website") Simple business website
 									option(value="online-store") Online store
@@ -57,7 +62,7 @@ block content
 							
 							.contact-form--row 
 								label(for="message" id='message-label') Message
-								textarea#message(name="message" rows="6" cols='52' placeholder="Tell us a little about your business and what you need...")
+								textarea#message(name="message" maxlength="1000"  minlength="10"  rows="6" cols='52' placeholder="Tell us a little about your business and what you need..." required)
 							
 							.contact-form--submit-btn 
 								button(type='submit' , class='contact-form--btn') Send Enquiry

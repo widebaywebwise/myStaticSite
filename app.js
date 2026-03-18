@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const mongooseSanitize = require('express-mongo-sanitize')
-const xss = require('xss-clean');
+// const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
 
@@ -43,12 +43,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-const crypto = require('crypto');
+/// unneeded crypto
 
-app.use((req, res, next) => {
-	res.locals.nonce = crypto.randomBytes(16).toString('base64');
-	next();
-});
+
+// const crypto = require('crypto');
+
+// app.use((req, res, next) => {
+// 	res.locals.nonce = crypto.randomBytes(16).toString('base64');
+// 	next();
+// });
 
 
 /// GA4 Tag
@@ -133,18 +136,19 @@ app.use(morgan('dev'));
 
 /// convert incoming data to Json
 
-app.use(express.json());
-
-
-
-///  Cookie Parser  
-
-app.use(cookieParser());
+app.use(express.json({ limit: '10kb' }));
 
 
 /// form data=method
 
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+
+
+///  Cookie Parser
+
+app.use(cookieParser());
+
+
 
 
 
@@ -165,6 +169,37 @@ const limiter = rateLimit(
 app.use('/api', limiter);
 
 
+/// enquiry rate limiter
+
+
+// const enquiryLimiter = rateLimit({
+
+// 	max: 10,
+// 	windowMs: 60 * 60 * 1000,
+// 	message: 'Too many enquiry submissions from this IP. Please try again later.'
+
+// });
+
+const enquiryLimiter = rateLimit({
+	windowMs: 60 * 60 * 1000,
+	max: 10,
+	handler: (req, res, next, options) => {
+
+		return res.status(options.statusCode).render('contact', {
+
+			pageTitle: 'Contact Widebay Web Wise | Website Design in Wide Bay',
+			pageDescription:
+				'Get in touch with Widebay Web Wise about a custom website for your business. Serving local businesses across Wide Bay, including Bundaberg, Hervey Bay, and Maryborough.',
+
+			rateLimitError: 'Too many enquiry submissions from this IP. Please try again later.'
+
+		});
+	}
+});
+
+
+
+
 
 /// Data sanitize NoSQL Injection 
 
@@ -174,7 +209,7 @@ app.use(mongooseSanitize());
 
 /// Data sanitize XSS Attacks 
 
-app.use(xss());
+// app.use(xss());
 
 
 
@@ -202,7 +237,7 @@ app.use((req, res, next) => {
 ///---				Routes				---///
 
 
-app.use('/api/v1/enquiries', enquiryRouter);
+app.use('/api/v1/enquiries', enquiryLimiter, enquiryRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/admin', adminRouter);
 app.use('/', viewRouter);

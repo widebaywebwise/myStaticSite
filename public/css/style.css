@@ -790,14 +790,9 @@ li a.header__nav--link:active	{
 .homePage__hero , .servicesPage-block, .contact, .success-page{	
 	
 	
-	/* width: 100vw;
-  margin-left: calc(-50vw + 50%);
-	background-image: radial-gradient(circle, #eaf1ffc9, 1px, transparent 1px);
-	background-size: 10px 10px; */
-	
-width: 100vw;
+	width: 100vw;
 	margin-left: calc(-50vw + 50%);
-	background-image: radial-gradient(circle, #e3ecffa7, 1.1px, transparent 1.1px);
+	background-image: radial-gradient(circle, #e3ecff7f, 1.1px, transparent 1.1px);
 	background-size: 10px 10px;
 	
 }
@@ -2723,6 +2718,26 @@ color: #fff;
 	
 	transform: scale(1.02) translateY(-2%);
 	
+}
+
+
+/* //  Honeypot Removal */
+
+.contactPage__honeypot {
+	position: absolute;
+	left: -9999px;
+}
+
+
+.contact-form__error {
+	margin-bottom: 1.2rem;
+	padding: 1rem 1.2rem;
+	border: 1px solid rgba(180, 80, 40, 0.2);
+	border-radius: 0.8rem;
+	background: #fff7f3;
+	color: #8a3d1f;
+	font-size: 1.4rem;
+	line-height: 1.5;
 }
 	
 	
