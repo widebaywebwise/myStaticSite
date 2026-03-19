@@ -702,13 +702,13 @@ li a.header__nav--link:active	{
 	/* grid-template-columns: 1.4fr repeat(3, 1fr); */
 	grid-template-columns: 2fr 1.5fr 1fr 2fr;
 	justify-items: center;
-	gap: 2rem;
-
+	column-gap: 2rem;
+align-items: start;
 	color: var(--color-text-lt);	
 }
 
 
-.footer--box ul{
+	.footer--services-box ul , 	.footer--links-box ul , 	.footer--contact-box-details ul {
 	
 	list-style: none;	
 	
@@ -719,6 +719,7 @@ li a.header__nav--link:active	{
 	font-size: 1.5rem;
 	
 	color: var(--color-text-lt-blue);
+
 	
 }
 
@@ -781,10 +782,27 @@ li a.header__nav--link:active	{
 	}
 
 
-.footer--logo-box img{
+	.footer--contact-box-details{
+		
+		margin-bottom: 1rem;
+	}
 	
-	/* margin-bottom: 1rem; */
+	
+
+	
+ul.socials-box {
+	
+	list-style: none;
+	
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	
+
+	
 }
+
+
 
 /* //------------						Home Page 					----------------// */
 
@@ -5034,10 +5052,10 @@ width: 30rem;
 	
 }
 
-.footer--box div{
+/* .footer--box div{
 	
 	height: 10rem;
-}
+} */
 
 
 .servicePage--grid {
@@ -5353,7 +5371,7 @@ grid-template-columns: 1fr;
 	align-items: center;
 	/* margin-bottom: 2rem; */
 	
-	margin: 0 auto 2rem;
+	margin: 0 auto;
 	
 }
 
@@ -5925,6 +5943,7 @@ h2.section-heading{
 
 	@media (max-width: 23.75em) {
 		
+	
 		  .process__step-number {
     width: 3rem;
     height: 3rem;
@@ -6002,10 +6021,10 @@ h2.section-heading{
 }
 
 
-
+/* 
 .footer--box div {
     height: 13.6rem;
-}
+} */
 
 .footer--box ul {
   font-size: 1.4rem;
