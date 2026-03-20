@@ -6170,6 +6170,11 @@ h2.section-heading{
 
 @media (max-width: 26.5em) {
 	
+	.success-page--box {    
+	
+  padding: 14rem 0;
+}
+	
 .aboutPage-list--box ul {
     font-size: 1.1rem;
     padding: 0 1rem 0 3rem;
