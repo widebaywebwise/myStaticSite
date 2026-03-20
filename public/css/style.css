@@ -2815,7 +2815,7 @@ color: #fff;
 	
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 2rem;
 	
 }
 
@@ -5437,7 +5437,7 @@ font-size: var(--text-h4);
 }
 
 .contact-form--form {
-  padding: 1.6rem 3.2rem;
+  padding: 1.6rem 2.2rem;
 }
 
 
@@ -5458,7 +5458,7 @@ font-size: var(--text-h4);
 }
 
 .contact-form--form {
-  padding: 1.6rem 3.2rem;
+  padding: 1.6rem 2rem;
 }
 
 .contact-heading-box {

@@ -30,21 +30,21 @@ const enquirySchema = new mongoose.Schema({
 		]
 	},
 
-	location: {
-		type: String,
-		trim: true,
-		lowercase: true,
-		enum: [
-			'bundaberg',
-			'hervey-bay',
-			'maryborough',
-			'bargara',
-			'childers',
-			'gin-gin',
-			'other-widebay',
-			'other-outside'
-		]
-	},
+	// location: {
+	// 	type: String,
+	// 	trim: true,
+	// 	lowercase: true,
+	// 	enum: [
+	// 		'bundaberg',
+	// 		'hervey-bay',
+	// 		'maryborough',
+	// 		'bargara',
+	// 		'childers',
+	// 		'gin-gin',
+	// 		'other-widebay',
+	// 		'other-outside'
+	// 	]
+	// },
 
 	enquiry: {
 		type: String,
