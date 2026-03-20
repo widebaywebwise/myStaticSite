@@ -4801,12 +4801,15 @@ border-bottom: 4px solid var(--color-secondary);
 .servicePage-included--details {
  display: none;
 }
+
+
 .servicePage-included--box {
   
-    gap: 1.2rem;
+    gap: 1.6rem;
   
 
 }
+
 .process__step {
     display: grid;
     grid-template-columns: 2fr 8fr;
@@ -6067,7 +6070,16 @@ padding: 1.6rem .8rem ;
   .process__step-content h3 {
       font-size: 1.8rem;
   }
-	
+
+	    .servicePage--box-details--box p {
+     margin-bottom: 1rem;
+    }
+  .servicePage--box-includes li {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    line-height: 1.25;
+}
+
 h2.section-heading{
 	
 	font-size: 2.2rem;
@@ -6235,6 +6247,11 @@ font-size: 1.6rem;
 
 	@media (max-width: 23.75em) {
 		
+.servicePage--box {
+  gap: 2rem;
+ 
+}
+
 		.servicePage-included--details {
  display: none;
 }
@@ -6368,7 +6385,7 @@ font-size: 1.6rem;
 
 margin-top: .5rem;
 
-padding-left: 2.4rem;
+padding-left: .75rem;
 }
 
 .servicesPage-heading-box p:last-child {
