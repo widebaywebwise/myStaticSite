@@ -14,8 +14,9 @@ module.exports = class Email {
 
 		this.name = user.name;
 		this.email = user.email;
-		this.phone = user.phone;
 		this.enquiry = user.enquiry;
+		this.service = user.service;
+		this.location = user.location;
 		this.message = user.message;
 	}
 
@@ -140,8 +141,9 @@ module.exports = class Email {
 		await this.send('enquiryEmail', 'You Received an Enquiry', {
 			name: this.name,
 			email: this.email,
-			phone: this.phone,
 			enquiry: this.enquiry,
+			service: this.service,
+			location: this.location,
 			message: this.message
 		});
 	}
