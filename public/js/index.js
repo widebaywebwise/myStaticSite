@@ -109,6 +109,60 @@ if (hamburgerBtn && navBox) {
 
 
 
+//----------------- Card Services bubbling  ---------------//
+
+
+const serviceGrid = document.querySelector('.servicePage--grid');
+
+if (serviceGrid) {
+
+
+	serviceGrid.addEventListener('click', function (e) {
+
+		const closeBtn = e.target.closest('.servicePage-included-close');
+
+		if (closeBtn) {
+
+			const includedBox = closeBtn.closest('.servicePage-included--box');
+
+			if (includedBox) {
+				includedBox.classList.remove('box--active');
+				includedBox.classList.add('box--inactive');
+			}
+			return;
+		}
+
+		const clickedBtn = e.target.closest('.servicePage-included-btn');
+
+		if (!clickedBtn) return;
+
+		const clickedCard = clickedBtn.closest('.servicePage--box');
+
+		if (!clickedCard) return;
+
+		const clickedIncludedBox = clickedCard.querySelector('.servicePage-included--box');
+
+		if (!clickedIncludedBox) return;
+
+		const isAlreadyOpen = clickedIncludedBox.classList.contains('box--active');
+
+		const allIncludedBoxes = serviceGrid.querySelectorAll('.servicePage-included--box');
+
+		allIncludedBoxes.forEach((box) => {
+
+			box.classList.remove('box--active');
+			box.classList.add('box--inactive');
+		});
+
+		if (!isAlreadyOpen) {
+
+			clickedIncludedBox.classList.remove('box--inactive');
+			clickedIncludedBox.classList.add('box--active');
+		}
+	});
+}
+
+
 
 
 
@@ -116,37 +170,37 @@ if (hamburgerBtn && navBox) {
 
 
 
-const howItWorks = document.getElementById("how-it-works");
+// const howItWorks = document.getElementById("how-it-works");
 
 
-if (howItWorks) {
-	const panels = howItWorks.querySelectorAll(".process__step-text");
-	const buttons = howItWorks.querySelectorAll(".process__step--btn");
+// if (howItWorks) {
+// 	const panels = howItWorks.querySelectorAll(".process__step-text");
+// 	const buttons = howItWorks.querySelectorAll(".process__step--btn");
 
-	howItWorks.addEventListener("click", (e) => {
-		const btn = e.target.closest(".process__step--btn");
-		if (!btn) return;
+// 	howItWorks.addEventListener("click", (e) => {
+// 		const btn = e.target.closest(".process__step--btn");
+// 		if (!btn) return;
 
-		e.preventDefault();
+// 		e.preventDefault();
 
-		const step = btn.dataset.step;
+// 		const step = btn.dataset.step;
 
-		/// panels
+// 		/// panels
 
-		panels.forEach((panel) => {
-			const isTarget = panel.classList.contains(`process-step--${step}`);
-			panel.classList.toggle("content-active", isTarget);
-			panel.classList.toggle("content-hidden", !isTarget);
-		});
+// 		panels.forEach((panel) => {
+// 			const isTarget = panel.classList.contains(`process-step--${step}`);
+// 			panel.classList.toggle("content-active", isTarget);
+// 			panel.classList.toggle("content-hidden", !isTarget);
+// 		});
 
-		/// buttons
+// 		/// buttons
 
-		buttons.forEach((b) => {
-			const isActive = b === btn;
-			b.classList.toggle("btn-active", isActive);
-			b.classList.toggle("btn-inactive", !isActive);
-		});
-	});
-}
+// 		buttons.forEach((b) => {
+// 			const isActive = b === btn;
+// 			b.classList.toggle("btn-active", isActive);
+// 			b.classList.toggle("btn-inactive", !isActive);
+// 		});
+// 	});
+// }
 
 
