@@ -18,9 +18,32 @@ const enquirySchema = new mongoose.Schema({
 		validate: [validator.isEmail, 'Please provide a valid Email']
 	},
 
-	phone: {
+	service: {
 		type: String,
-		trim: true
+		trim: true,
+		lowercase: true,
+		enum: [
+			'single-page-website',
+			'multi-page-website',
+			'advanced-website',
+			'not-sure-yet'
+		]
+	},
+
+	location: {
+		type: String,
+		trim: true,
+		lowercase: true,
+		enum: [
+			'bundaberg',
+			'hervey-bay',
+			'maryborough',
+			'bargara',
+			'childers',
+			'gin-gin',
+			'other-widebay',
+			'other-outside'
+		]
 	},
 
 	enquiry: {
@@ -31,9 +54,6 @@ const enquirySchema = new mongoose.Schema({
 			'general-enquiry',
 			'quick-quote',
 			'new-website',
-			'simple-business-website',
-			'online-store',
-			'booking-enquiry-website',
 			'not-sure-yet'
 		]
 	},

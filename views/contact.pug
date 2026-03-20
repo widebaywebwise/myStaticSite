@@ -38,10 +38,6 @@ block content
 							.contact-form--row 
 								label(for="email") Email Address
 								input(type="email" name='email' id='email' required) 
-								
-							.contact-form--row 
-								label(for="phone") Phone Number (Optional)
-								input(type="tel" name='phone' id='phone')
 							
 							.contactPage__form-row.contactPage__honeypot(aria-hidden="true")
 								label(for="website") Website
@@ -55,14 +51,33 @@ block content
 									option(value="general-enquiry") General enquiry
 									option(value="quick-quote") Get a quick quote
 									option(value="new-website") New website
-									option(value="simple-business-website") Simple business website
-									option(value="online-store") Online store
-									option(value="booking-enquiry-website") Booking / enquiry website
 									option(value="not-sure-yet") Not sure yet
+									
+							.contact-form--row 
+								label(for="service") Interested In
+								select#service(name="service" required)
+									option(value="" disabled selected) Select service type:
+									option(value="single-page-website") Single page website
+									option(value="multi-page-website") Multi page website
+									option(value="advanced-website") Advanced website
+									option(value="not-sure-yet") Not sure yet
+									
+							.contact-form--row 
+								label(for="location") Location
+								select#location(name="location" required)
+									option(value="" disabled selected) Select your location:
+									option(value="bundaberg") Bundaberg
+									option(value="hervey-bay") Hervey Bay
+									option(value="maryborough") Maryborough
+									option(value="bargara") Bargara
+									option(value="childers") Childers
+									option(value="gin-gin") Gin gin
+									option(value="other-widebay") Other Wide Bay Area
+									option(value="other-outside") Outside Wide Bay
 							
 							.contact-form--row 
 								label(for="message" id='message-label') Message
-								textarea#message(name="message" maxlength="1000"  minlength="10"  rows="6" cols='52' placeholder="Tell us a little about your business and what you need..." required)
+								textarea#message(name="message" maxlength="1000"  minlength="10"  rows="4" cols='52' placeholder="Tell us a little about your business and what you need..." required)
 							
 							.contact-form--submit-btn 
 								button(type='submit' , class='contact-form--btn') Send Enquiry

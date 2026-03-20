@@ -2794,7 +2794,7 @@ color: #fff;
 	object-fit: cover;
 	display: block;
 	
-	aspect-ratio: 11/13;
+	aspect-ratio: 10/13;
 	
 
 }
@@ -4803,6 +4803,7 @@ border-bottom: 4px solid var(--color-secondary);
 }
 
 
+
 .servicePage-included--box {
   
     gap: 1.6rem;
@@ -5047,13 +5048,13 @@ li.portfolio--skills-list-item {
 
 	
 .contact-form--form {
-  padding: 1.6rem 0;
+  padding: 1.6rem 2rem 1.6rem 0;
 }
 
 .contact-form--img {
    
   
-       aspect-ratio: 8 / 13;
+       aspect-ratio: 7 / 13;
 }
 
 }
@@ -5432,7 +5433,7 @@ font-size: var(--text-h4);
 .contact-form--img {
    
   
-       aspect-ratio: 7 / 13;
+       aspect-ratio: 6 / 13;
 }
 
 .contact-form--form {
@@ -5453,7 +5454,7 @@ font-size: var(--text-h4);
 	.contact-form--img {
    
   
-       aspect-ratio: 6 / 13;
+       aspect-ratio: 5 / 13;
 }
 
 .contact-form--form {
