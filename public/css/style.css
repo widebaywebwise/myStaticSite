@@ -841,19 +841,19 @@ ul.socials-box {
 
 	
 		background:
-		radial-gradient(50rem 15rem at 28% 80%,
+		radial-gradient(50rem 10rem at 28% 80%,
 			rgba(110, 170, 255, 0.3) 0%,
 			rgba(110, 170, 255, 0.04) 34%,
 			rgba(110, 170, 255, 0.015) 52%,
-			rgba(110, 170, 255, 0) 68%
+			rgba(110, 170, 255, 0) 60%
 		),
-		radial-gradient(55rem 30rem at 28% 20%,
+		radial-gradient(55rem 20rem at 28% 18%,
 			rgba(254, 174, 117, 0.3) 0%,
 			rgba(254, 174, 117, 0.1) 34%,
 			rgba(254, 174, 117, 0.05) 55%,
 			rgba(254, 174, 117, 0) 70%
 		),
-		radial-gradient(50rem 50rem at 67.5% 52.5%,
+		radial-gradient(50rem 50rem at 70% 55%,
 			rgba(110, 170, 255, 0.3) 0%,
 			rgba(110, 170, 255, 0.1) 36%,
 			rgba(110, 170, 255, 0.05) 50%,
@@ -4678,6 +4678,36 @@ border-bottom: 4px solid var(--color-secondary);
 
 @media (max-width: 76.25em) {
 	
+	
+	.homePage__hero {	
+	
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+
+	
+		background:
+		radial-gradient(47rem 8rem at 20% 80%,
+			rgba(110, 170, 255, 0.3) 0%,
+			rgba(110, 170, 255, 0.04) 34%,
+			rgba(110, 170, 255, 0.015) 52%,
+			rgba(110, 170, 255, 0) 60%
+		),
+		radial-gradient(55rem 20rem at 28% 21%,
+			rgba(254, 174, 117, 0.3) 0%,
+			rgba(254, 174, 117, 0.1) 34%,
+			rgba(254, 174, 117, 0.05) 55%,
+			rgba(254, 174, 117, 0) 70%
+		),
+		radial-gradient(45rem 45rem at 75% 55%,
+			rgba(110, 170, 255, 0.3) 0%,
+			rgba(110, 170, 255, 0.1) 36%,
+			rgba(110, 170, 255, 0.05) 50%,
+			rgba(110, 170, 255, 0) 60%
+		),
+		#f9fbff;
+		
+	}
+	
 	.homePage-grid {
 		
 		gap:1.4rem;
@@ -5153,7 +5183,7 @@ li.portfolio--skills-list-item {
 			rgba(110, 170, 255, 0.015) 52%,
 			rgba(110, 170, 255, 0) 68%
 		),
-		radial-gradient(40rem 23rem at 50% 10%,
+		radial-gradient(40rem 11rem at 45% 10%,
 			rgba(254, 174, 117, 0.3) 0%,
 			rgba(254, 174, 117, 0.1) 34%,
 			rgba(254, 174, 117, 0.05) 55%,
@@ -5942,7 +5972,7 @@ grid-row: 1/2;
 			rgba(110, 170, 255, 0.015) 52%,
 			rgba(110, 170, 255, 0) 68%
 		),
-		radial-gradient(30rem 18rem at 45% 9%,
+		radial-gradient(30rem 8rem at 40% 9%,
 			rgba(254, 174, 117, 0.3) 0%,
 			rgba(254, 174, 117, 0.1) 34%,
 			rgba(254, 174, 117, 0.05) 55%,
@@ -6423,7 +6453,7 @@ font-size: 1.6rem;
 			rgba(110, 170, 255, 0.015) 52%,
 			rgba(110, 170, 255, 0) 68%
 		),
-		radial-gradient(28rem 16rem at 45% 6%,
+		radial-gradient(20rem 5rem at 40% 7%,
 			rgba(254, 174, 117, 0.3) 0%,
 			rgba(254, 174, 117, 0.1) 34%,
 			rgba(254, 174, 117, 0.05) 55%,
