@@ -6335,10 +6335,17 @@ font-size: 1.6rem;
 	.homePage--heading, .flex-heading p , .flex-heading span{	
 	
 		
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     line-height: 1;
 
 	}
+	
+	    .homePage-grid {
+       
+    
+        padding: 2.2rem 1.2rem;
+    }
+}
 	
 	.homePage__cta-box p {
    
@@ -6348,9 +6355,10 @@ font-size: 1.6rem;
 
 
 .homePage--sub-heading {
-    font-size: 1.25rem;
-    line-height: 1.2;
+    font-size: 1.3rem;
+    line-height: 1.25;
 		padding: 0 1rem;
+		margin-bottom: .4rem;
 }
 
 .homepPage-tagline {
