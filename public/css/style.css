@@ -6084,7 +6084,7 @@ grid-row: 1/2;
 		align-items: center;
 		justify-content: center;
 		border-radius: 50%;
-		box-shadow: 2px 4px 18px rgba(25, 100, 230, 0.35);
+		box-shadow: 2px 4px 16px rgba(25, 100, 230, 0.22);
 	}
 
 	.header__hamburger--icon {
@@ -6448,6 +6448,25 @@ font-size: 1.6rem;
 
 	@media (max-width: 23.75em) {
 		
+		.homePage--sub-heading {
+        font-size: 1.35rem;
+        line-height: 1.25;
+				padding: 0 1rem;
+    }
+		
+.header--box {
+  padding: 0 2.2em;
+ 
+}
+
+    .header__hamburger--box {
+      
+        padding: 0.5rem 1rem;
+    }
+
+    .header__logo {
+        width: 75%;
+    }
 		    .homepPage-tagline {
         font-size: 1.1rem;
 				/* padding: 0; */
@@ -6515,7 +6534,7 @@ font-size: 1.6rem;
     text-align: center;
     align-items: center;
     gap: 1.7rem;
-    padding: 0 0 2rem;
+    padding: 0 0 1rem;
   }
 
   .homePage--heading,
