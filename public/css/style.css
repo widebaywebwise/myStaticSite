@@ -5856,7 +5856,7 @@ ul.header__nav--list {
 
 .aboutPage-image--box {
     grid-column: 6 / 9;
-    grid-row: 4 / 9;
+    grid-row: 4 / 10;
 }
 
 .portfolio {
@@ -6264,7 +6264,7 @@ padding: 1.6rem .8rem ;
 		
 		    .aboutPage--img {
         width: 91%;
-        margin-left: -3rem;
+        margin-left: -9rem;
     }
 		
 		    .portfolio--text-box-featured p {
@@ -6280,6 +6280,11 @@ padding: 1.6rem .8rem ;
 		    .contact-text-box p {
         font-size: 1.4rem;
         line-height: 1.25;
+    }
+		
+		    .aboutPage {
+        padding-top: 2rem;
+        margin-bottom: 2rem;
     }
 		
 }
@@ -6408,7 +6413,11 @@ h2.section-heading{
 	margin-bottom: .75rem;
 }
 
-
+    .aboutPage--img {
+        width: 100%;
+        margin-left: -5rem;
+    }
+	
 		
 
 	
@@ -6418,6 +6427,11 @@ h2.section-heading{
 
 
 @media (max-width: 26.5em) {
+	
+	    .aboutPage--img {
+        width: 91%;
+        margin-left: -3rem;
+    }
 	
   .servicePage--box-details--box ul {
    
@@ -6550,6 +6564,10 @@ font-size: 1.6rem;
 
 	@media (max-width: 23.75em) {
 		
+		.aboutPage--img {
+        width: 12.5rem;
+    }
+		
 		.homePage--sub-heading {
         font-size: 1.35rem;
         line-height: 1.25;
@@ -6662,6 +6680,9 @@ font-size: 1.6rem;
     padding-top: 1.6rem;
     margin-bottom: 1.4rem;
   }
+	
+
+
 }
 	
 /* /// 345px */
@@ -6753,7 +6774,7 @@ margin-bottom: 1.4rem;
     }
 		
 		    .aboutPage-list--box {
-        width: 100%;
+        width: 90%;
     }
 		
 		    .aboutPage--img {
@@ -6769,6 +6790,7 @@ margin-bottom: 1.4rem;
   .aboutPage-list--box ul {
   font-size: 1rem;
   padding: 0 .4rem 0 1.2rem;
+	
 }
 
 
