@@ -2086,7 +2086,7 @@ cursor:pointer;
 	
 	display: flex;
 	flex-direction: column;
-	gap:8rem;
+	gap:8.8rem;
 	
 	
 }
@@ -2176,6 +2176,8 @@ cursor:pointer;
 	margin-top: -2px;
 	border-radius: 8px;	
 	background-color: var(--color-primary-lightest-1);
+	
+	width: 95%;
 }
 		
 
@@ -2192,6 +2194,8 @@ cursor:pointer;
 	gap: 1.4rem;
 	
 	padding:0 2rem;
+	
+	
 	
 }
 
@@ -2377,7 +2381,7 @@ transform: translate(50%,-50%)
 
 h3.portfolio-heading{
 	
-	margin-bottom: 3.6rem;
+	margin-bottom: 6rem;
 }
 
 
@@ -5152,6 +5156,8 @@ li.portfolio--skills-list-item {
  
   box-shadow: 1px 1px 32px rgba(15, 23, 42, .12);
 	padding: 2rem 0;
+	
+	width: 100%;
 }
 
 
