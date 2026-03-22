@@ -2123,7 +2123,7 @@ cursor:pointer;
 .aboutPage-heading--box h2{
 	
 	font-size: var(--text-xxxlg);
-	line-height: .98;
+	line-height: .90;
 	font-weight: 600;
 	
 	margin-bottom: 1.1rem;
@@ -2141,8 +2141,8 @@ cursor:pointer;
 	
 	display: flex;	
 	flex-direction: column;	
-	gap: 1.8rem;	
-	margin-bottom: .8rem;
+	gap: 1.2rem;	
+	margin-bottom: 1.4rem;
 }
 
 	
@@ -5837,7 +5837,7 @@ ul.header__nav--list {
 .servicesPage-heading-box p {
 	
     font-size: var(--text-body);
-		padding: 0 1rem;
+		padding: 0 3rem;
 }
 
 .servicesPage-heading-box {
@@ -6234,7 +6234,7 @@ padding: 1.6rem .8rem ;
 }
 		
 .servicesPage-heading-box p:last-child {
-   margin-bottom: 3rem;
+   margin-bottom: 1.4rem;
 }    
 
 .servicePage--grid {
@@ -6617,7 +6617,7 @@ font-size: 1.6rem;
 
   .aboutPage-list--box ul {
     font-size: 1rem;
-    padding: 0 .75rem 0 2rem;
+    padding: 0 .75rem 0 .75rem;
   }
 
   .process__step-number {
