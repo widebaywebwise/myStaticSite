@@ -5590,7 +5590,7 @@ font-size: var(--text-h4);
     .aboutPage-heading--box h2 {
   
     margin-bottom: .5rem;
-		line-height: 1;
+		line-height: .95;
 		
 }
 
@@ -6325,7 +6325,11 @@ padding: 1.6rem .8rem ;
   
     font-size: 1.4rem;
 }
-	
+	.aboutPage-image--box {
+    grid-column: 6 / 9;
+    grid-row: 4 / 9;
+}
+
 	
 	
   .process__step-content h3 {
@@ -6557,6 +6561,7 @@ font-size: 1.6rem;
  
 }
 
+
     .header__hamburger--box {
       
         padding: 0.5rem 1rem;
@@ -6695,14 +6700,20 @@ font-size: 1.6rem;
 		#f9fbff;
 		
 	}
+	
+	.aboutPage-image--box {
+    grid-column: 5 / 9;
+    grid-row: 4 / 9;
+}
+
 		.portfolio-grid {
         padding: 0 2.4rem;
     }
 		
 		    .aboutPage-image--box--1 {
     
-        justify-content: stretch;
-				margin-left: 2rem;
+        /* justify-content: stretch; */
+				margin-left: 3.22rem;
     }
 		
 .footer--copyright {
@@ -6748,6 +6759,7 @@ margin-bottom: 1.4rem;
 		    .aboutPage--img {
         width: 90%;
         margin-left:0;
+				margin-right: 4rem;
     }
 		    .portfolio-grid {
         padding: 0 1rem;
