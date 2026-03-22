@@ -6506,18 +6506,33 @@ font-size: 1.6rem;
 
 	@media (max-width: 23.75em) {
 		
+		    .portfolio--text-box-secondary {
+      
+        gap: 0.6.8rem;
+    }
+		
 		    .portfolio {
 					
         margin-bottom: 2.4rem;
-        padding: 0 2rem;
+        padding: 0 4.2rem;
     }
 		
-		
+		.portfolio--text-box-header {
+   
+    gap: 1.2rem;
+}
 		.portfolio-grid {
 		
 		padding: 0 1rem;
 		gap: 2rem;
 	}
+	
+	    .portfolio--heading-badge h4 {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 1.2rem 0;
+      
+    }
 	
 		
 		.aboutPage-heading--box h2 {
