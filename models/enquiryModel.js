@@ -31,23 +31,11 @@ const enquirySchema = new mongoose.Schema({
 	},
 
 
-	// enquiry: {
-	// 	type: String,
-	// 	required: [true, 'Please select an enquiry type'],
-	// 	lowercase: true,
-	// 	enum: [
-	// 		'general-enquiry',
-	// 		'quick-quote',
-	// 		'new-website',
-	// 		'not-sure-yet'
-	// 	]
-	// },
-
 	message: {
 		type: String,
 		required: [true, 'Please enter a message'],
 		trim: true,
-		minLength: [10, 'Message must be at least 10 characters'],
+		minLength: [6, 'Message must be at least 10 characters'],
 		maxLength: [1000, 'Message cannot be more than 1000 characters']
 	}
 },

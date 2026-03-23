@@ -14,9 +14,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 
 		name: req.body.name,
 		email: req.body.email,
-		// enquiry: req.body.enquiry,
 		service: req.body.service,
-		// location: req.body.location,
 		message: req.body.message
 	});
 
