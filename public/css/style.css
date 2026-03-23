@@ -850,7 +850,7 @@ ul.socials-box {
 			rgba(110, 170, 255, 0.015) 52%,
 			rgba(110, 170, 255, 0) 60%
 		),
-		radial-gradient(55rem 20rem at 28% 20%,
+		radial-gradient(50rem 18rem at 30% 18%,
 			rgba(254, 174, 117, 0.3) 0%,
 			rgba(254, 174, 117, 0.1) 34%,
 			rgba(254, 174, 117, 0.05) 55%,
@@ -6772,7 +6772,7 @@ padding: 0.25rem 2.2em .35rem;
 	
 	/* // 'professional */
 	
-	radial-gradient(22rem 5rem at 40% 5.5%,
+	radial-gradient(20rem 4rem at 42% 5%,
 	rgba(254, 174, 117, 0.3) 0%,
 	rgba(254, 174, 117, 0.1) 34%,
 	rgba(254, 174, 117, 0.05) 55%,
