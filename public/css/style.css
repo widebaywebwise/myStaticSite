@@ -554,7 +554,7 @@ border-bottom: 1px solid var(--color-lt-bg);
 
 .header--box{
 	
-	padding:0.35rem 1rem ;
+	padding:0.5rem 1.4rem ;
 }
 
 .header--box , .footer--box{
@@ -571,6 +571,8 @@ border-bottom: 1px solid var(--color-lt-bg);
 	
 	max-width: 120rem;	
 	
+
+	
 }
 
 .footer--box{
@@ -580,10 +582,16 @@ border-bottom: 1px solid var(--color-lt-bg);
 	
 }
 
-.header__logo--box, 	.header__cta--box{
+.header__cta--box{
 	
-	flex:0 0 20%;
+	flex:0 0 16.5%;
+	
+}
 
+.header__logo--box{
+	
+	flex:0 0 19%;
+	
 }
 
 	.header__cta--box{
@@ -594,7 +602,7 @@ border-bottom: 1px solid var(--color-lt-bg);
 .header__logo{
 	display: flex;
 	align-items: center;
-width: 90%;
+width: 100%;
 
 }
 
@@ -623,7 +631,8 @@ ul.header__nav--list{
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	gap: 5.8rem;	
+	gap: 5.2rem;	
+	
 }
 
 
@@ -636,6 +645,8 @@ li a.header__nav--link:visited{
 	color: var(--color-text);
 	transition: all .2s;
 	border-bottom: 1px solid transparent;
+	
+	
 	
 }
 
@@ -6706,8 +6717,11 @@ margin-bottom: 1rem;
 
 	@media (max-width: 23.75em) {
 		
+		
+		
 .aboutPage-heading--box h1 {
     font-size: 1.8rem;
+		padding-top: 1.4rem;
 }
 
 .portfolio--text-box-header {
