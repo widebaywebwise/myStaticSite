@@ -888,7 +888,7 @@ ul.socials-box {
 	
 	display: grid;	
 	grid-template-columns: 1fr 1fr;
-  gap: 1rem;         
+  gap: 3.2rem;         
   padding: 6.8rem 8rem 2rem;	
 
  }
@@ -908,7 +908,7 @@ ul.socials-box {
 		
 		display: flex;
 		flex-direction: column;
-		gap: 4rem;	
+		gap: 3.2rem;	
 		/* align-self: center; */
 		/* justify-content: center; */
 		
@@ -1064,13 +1064,13 @@ ul.socials-box {
 	
 	.homePage__hero--img img {
 		
-		max-width: 92.5%;
+		max-width: 100%;
 		height: auto;
 		
-		border-top-left-radius: 10px;
-		border-top-right-radius: 18px;
-	  border-bottom-left-radius: 220px 140px;
-	  border-bottom-right-radius: 18px;
+		/* border-top-left-radius: 10px;
+		border-top-right-radius: 18px; */
+	  border-bottom-left-radius: 100px 80px;
+	  border-bottom-right-radius: 50px 30px;
 		
 		
 }
@@ -5552,6 +5552,13 @@ font-size: var(--text-h4);
 
 .contact-form--form {
   padding: 1.6rem 2.2rem;
+}
+
+.homePage__hero--image-box {
+    overflow: hidden;
+    display: grid;
+    align-items: end;
+    justify-content: center;
 }
 
 
