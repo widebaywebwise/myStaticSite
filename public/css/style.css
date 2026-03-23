@@ -6564,20 +6564,27 @@ h3.portfolio-heading {
 
 .footer {
 
-  padding: 2rem 0;
+  padding: 0;
  
   margin-top: 3rem;
 }
 
 
 
+.footer-lofo--flex{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: .5rem;
+}
 
 .footer--box ul {
   font-size: 1.4rem;
 }
 
 .footer--logo-box--text{
-    padding-top: 1.2rem;
+    padding-top: 0;
 }
 
 .footer--services-box p {
@@ -6596,7 +6603,7 @@ h3.portfolio-heading {
 
 .footer--box p {
 text-align: left;
-font-size: 1.6rem;
+font-size: 1.4rem;
 }
 
 
@@ -6636,6 +6643,34 @@ font-size: 1.6rem;
         font-size: 2.6rem;
         line-height: .95;
     }
+		
+		
+.footer--services-box{
+	
+	display: none;
+}
+
+
+.footer--logo-box--text {
+        margin-bottom: .5rem;
+    }
+
+.footer--services-box p, .footer--links-box p, .footer--contact-box p {
+
+font-weight: 600;
+margin-bottom: 1rem;
+}
+
+.footer--box {
+ 
+  gap: .6rem;
+	padding-bottom: 1rem;
+}
+
+    .footer-text-p {
+        gap: 1.1rem;
+    }
+
 
 }
 
