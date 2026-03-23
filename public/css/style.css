@@ -6892,10 +6892,11 @@ padding: 0.25rem 2.2em .35rem;
   .footer--copyright {
     padding-top: 1.6rem;
     margin-bottom: 1.4rem;
-  }
+  }	
 	
-	
-	
+	 .services__heading-box h2 {
+     margin-top: 0;
+    }
 	
 
 
