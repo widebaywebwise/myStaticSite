@@ -2158,7 +2158,7 @@ cursor:pointer;
 .aboutPage-heading--box--text p{	
 	
 	font-size: 1.6rem;
-	color: var(--color-text-muted-dk);
+	color: #5c6370;
 	line-height: 1.3;
 }
 
@@ -6373,6 +6373,16 @@ padding: 1.6rem .8rem ;
         font-size:1.4rem;
 				
     }
+		
+.servicesPage-heading-box h1 {
+
+  font-size: var(--text-h3);
+}
+		
+.aboutPage-container {
+  
+    padding: 2.8rem 3.2rem 0;
+}
 	
 			.homePage__hero {	
 	
@@ -6483,6 +6493,17 @@ h2.section-heading{
 
 @media (max-width: 26.5em) {
 	
+
+.aboutPage-heading--box {
+    gap: 1.4rem;
+}
+
+.aboutPage-heading--box--text {
+ 
+    gap: 1rem;
+		padding-right: 0;
+}
+
 	
 .header__logo {
   width: 65%;

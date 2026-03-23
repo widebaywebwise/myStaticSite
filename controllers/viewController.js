@@ -58,7 +58,7 @@ exports.getServicesPage = catchAsync(async (req, res, next) => {
 
 	res.status(200).render('services', {
 
-		pageTitle: 'Website Services for Local Businesses in Wide Bay | Widebay Web Wise',
+		pageTitle: 'Website Services for Local Businesses in Wide Bay | Wide Bay & Bundaberg | Widebay Web Wise',
 		pageDescription:
 			'Explore custom website services for local businesses across Wide Bay, including Bundaberg, Hervey Bay, and Maryborough. Professional brochure, enquiry, and small business websites built to help you get found online.',
 		canonicalUrl: `${process.env.CANONICAL_URL}/static/services`
