@@ -44,43 +44,32 @@ block content
 								input(type="text" name="website" id="website" tabindex="-1" autocomplete="off")
 								
 															
-							.contact-form--row 
-								label(for="enquiry") Enquiry Type
-								select#enquiry(name="enquiry" required)
-									option(value="" disabled selected) Select an enquiry type
-									option(value="general-enquiry") General enquiry
-									option(value="quick-quote") Get a quick quote
-									option(value="new-website") New website
-									option(value="not-sure-yet") Not sure yet
+							//- .contact-form--row 
+							//- 	label(for="enquiry") Enquiry Type
+							//- 	select#enquiry(name="enquiry" required)
+							//- 		option(value="" disabled selected) Select an enquiry type
+							//- 		option(value="general-enquiry") General enquiry
+							//- 		option(value="quick-quote") Get a quick quote
+							//- 		option(value="new-website") New website
+							//- 		option(value="not-sure-yet") Not sure yet
 									
 							.contact-form--row 
 								label(for="service") Interested In
 								select#service(name="service" required)
-									option(value="" disabled selected) Select service type:
+									option(value="" disabled selected) Select what you need:
 									option(value="single-page-website") Single page website
 									option(value="multi-page-website") Multi page website
 									option(value="advanced-website") Advanced website
 									option(value="not-sure-yet") Not sure yet
 									
-							//- .contact-form--row 
-							//- 	label(for="location") Location
-							//- 	select#location(name="location" required)
-							//- 		option(value="" disabled selected) Select your location:
-							//- 		option(value="bundaberg") Bundaberg
-							//- 		option(value="hervey-bay") Hervey Bay
-							//- 		option(value="maryborough") Maryborough
-							//- 		option(value="bargara") Bargara
-							//- 		option(value="childers") Childers
-							//- 		option(value="gin-gin") Gin gin
-							//- 		option(value="other-widebay") Other Wide Bay Area
-							//- 		option(value="other-outside") Outside Wide Bay
-							
+	
 							.contact-form--row 
 								label(for="message" id='message-label') Message
-								textarea#message(name="message" maxlength="1000"  minlength="10"  rows="5" cols='52' placeholder="Tell us a little about your business and what you need..." required)
+								textarea#message(name="message" maxlength="1000"  minlength="10"  rows="8" cols='52' placeholder="Tell us a little about your business and what you need..." required)
 							
 							.contact-form--submit-btn 
 								button(type='submit' , class='contact-form--btn') Send Enquiry
+								p Usually replied to within 1 business day
 														 
 
 							.contact-form-bottom 

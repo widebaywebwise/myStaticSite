@@ -30,33 +30,18 @@ const enquirySchema = new mongoose.Schema({
 		]
 	},
 
-	// location: {
+
+	// enquiry: {
 	// 	type: String,
-	// 	trim: true,
+	// 	required: [true, 'Please select an enquiry type'],
 	// 	lowercase: true,
 	// 	enum: [
-	// 		'bundaberg',
-	// 		'hervey-bay',
-	// 		'maryborough',
-	// 		'bargara',
-	// 		'childers',
-	// 		'gin-gin',
-	// 		'other-widebay',
-	// 		'other-outside'
+	// 		'general-enquiry',
+	// 		'quick-quote',
+	// 		'new-website',
+	// 		'not-sure-yet'
 	// 	]
 	// },
-
-	enquiry: {
-		type: String,
-		required: [true, 'Please select an enquiry type'],
-		lowercase: true,
-		enum: [
-			'general-enquiry',
-			'quick-quote',
-			'new-website',
-			'not-sure-yet'
-		]
-	},
 
 	message: {
 		type: String,

@@ -2661,7 +2661,7 @@ transform: scale(1.1);
 	display: grid;	
 	align-items: center;	
 	
-	padding: 2rem 0;
+	padding: 3.2rem 1rem;
 
 }
 
@@ -2706,11 +2706,19 @@ transform: scale(1.1);
 }
 
 
+	.contact-form--submit-btn p{
+		
+		
+		font-size: 1.2rem;
+	}
 	.contact-form--submit-btn{
 		
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
+		
+		gap: .75rem;
 		
 		padding: 1rem 0 .75rem;
 	
@@ -5590,6 +5598,10 @@ font-size: var(--text-h4);
     
     gap: 6rem;
 }
+
+    .contact-form--form {
+        padding: 1.6rem 2rem 1.6rem 0;
+    }
 
 	
 }
