@@ -5336,7 +5336,7 @@ align-items: center;
 
 .homePage__hero--img img {
 	
-	max-width: 60%;
+	max-width: 90%;
 
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 18px;
@@ -6411,7 +6411,7 @@ padding: 1.6rem .8rem ;
 	
 	
 		background:
-		radial-gradient(36rem 10rem at 50% 42%,
+		radial-gradient(36rem 10rem at 50% 39%,
 			rgba(110, 170, 255, 0.3) 0%,
 			rgba(110, 170, 255, 0.04) 34%,
 			rgba(110, 170, 255, 0.015) 52%,
