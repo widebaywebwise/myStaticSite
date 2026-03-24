@@ -5555,7 +5555,7 @@ padding-top: 3rem;
 .services--heading-box h3 {
 	
   font-size: var(--text-body);
-	height: 3.2rem;
+	height: 1.4rem;
  
 }
 
@@ -6714,6 +6714,12 @@ padding: 1.6rem .8rem ;
  
 }
 
+
+.process__heading-box p {
+	font-size: 1.3rem;
+
+}
+
  
 
 }
@@ -7154,6 +7160,10 @@ margin-bottom: 1rem;
     font-size: 1.1rem;
    
 }
+.services--heading-box h3 {
+
+  height: 1.4rem;
+}
 
 }
 
@@ -7163,10 +7173,8 @@ margin-bottom: 1rem;
 
 	@media (max-width: 23.75em) {
 		
-.process__heading-box p {
-	font-size: 1.3rem;
 
-}
+
 
 .process__heading-box h2, .services__heading-box h2 {
 	font-size: var(--text-lg);
