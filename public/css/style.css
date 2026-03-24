@@ -7130,7 +7130,7 @@ line-height: 1.15;
 .homePage--sub-heading {
   font-size: 1.35rem;
   line-height: 1.25;
-	padding: 0 2.2rem;
+	padding: 0;
 	margin-bottom: 0;
 }
 
@@ -7154,6 +7154,8 @@ padding: 0.25rem 2.2em .35rem;
 }
 
 .homePage__hero {	
+	
+	padding: 2rem 1rem 1rem;
 	
 	/* // cta btn */
 	
