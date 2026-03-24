@@ -2491,7 +2491,7 @@ h3.portfolio-heading , h3.faq-heading {
 
 .portfolio--image-box-secondary {
 	width: 100%;
-	aspect-ratio: 16 / 10;   /* pick one ratio and keep all cards the same */
+	aspect-ratio: 2/1;   /* pick one ratio and keep all cards the same */
 	overflow: hidden;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
@@ -6960,7 +6960,7 @@ h3.portfolio-heading {
 
  .portfolio-grid {
   grid-template-columns: 1fr;
-	padding: 0 5.2rem;
+	padding: 0 5.8rem;
 }
 
   .servicePage--box-details--box ul {
@@ -7126,7 +7126,34 @@ margin-bottom: 1rem;
     .footer-text-p {
         gap: 1.1rem;
     }
+		
+	
+.portfolio--text-box-secondary {
+	
+	gap: .2rem;
+	padding: 0 .5rem 0;
+}
 
+.portfolio--featured--link {
+        margin: 0 0 .75rem;
+    }
+		
+.portfolio--status-badge {
+
+  margin: 0 auto .4rem;
+
+}
+    .portfolio--heading-badge h4
+
+ {
+        font-size: 1.5rem;
+       
+    }
+		
+.portfolio--status-badge p {
+    font-size: 1.1rem;
+   
+}
 
 }
 
