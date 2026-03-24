@@ -6268,9 +6268,10 @@ grid-row: 1/2;
 .portfolio--status-badge {
 	display: flex;
 	width: fit-content;
-	margin: 0 auto;
+	margin: 0 auto 1.4rem;
 	align-items: center;
 	justify-content: center;
+	
 }
 
 .portfolio--status-badge p {
