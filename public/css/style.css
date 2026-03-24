@@ -6322,7 +6322,7 @@ display: none;
 
 .homePage__main {
 	
-    padding: 4rem 2rem 0;
+    padding: 1.8rem 2rem 0;
     gap: 6rem;
 }
 
@@ -6741,9 +6741,9 @@ padding: 1.6rem .8rem ;
 	
 	
 	.homePage__cta-box p {
-    margin-top: 2.2rem;
+    margin-top: 1.2rem;
   
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 	
@@ -6828,7 +6828,7 @@ h2.section-heading{
 
 	
 	.homePage__main {
-        padding: 2.8rem 2rem 0;
+        padding: 1.6rem 2rem 0;
         gap: 4rem;
     }
 	
@@ -6942,6 +6942,12 @@ h3.portfolio-heading {
   
 }
 
+.homePage__hero--heading-block {
+   margin-bottom: .75rem;
+}
+
+
+
 
 /* // small screen fix */
 
@@ -7009,7 +7015,7 @@ font-size: 1.4rem;
         max-width: 35rem;
 	text-align: center;
 	align-items: center;
-	gap: 2rem;
+	gap: 1.6rem;
 	padding: 0 2rem 2rem;
 }
 
