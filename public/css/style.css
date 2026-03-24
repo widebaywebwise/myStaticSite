@@ -613,10 +613,6 @@ width: 100%;
 }
 
 
-.services__heading-box , .process__heading-box{
-    text-align: center;
-}
-
 
 
 /*/ Navigation /*/
@@ -894,7 +890,7 @@ ul.socials-box {
 			rgba(110, 170, 255, 0.05) 50%,
 			rgba(110, 170, 255, 0) 70%
 		),
-		#f9fbff;
+		#fff;
 		
 		
 		
@@ -1169,7 +1165,7 @@ ul.socials-box {
 
 .services__heading-box{
 	
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 
@@ -1193,7 +1189,8 @@ ul.socials-box {
 	align-items: center;
 	justify-content: center;
 	grid-template-columns: repeat(auto-fit, minmax(27rem, 35rem));
-	gap: 4rem;
+	column-gap: 4rem;
+	row-gap: 3.4rem;
 
 	background: #fff;
 	
@@ -1275,6 +1272,41 @@ ul.socials-box {
 	font-size: var(--text-small);
 	color:var( --color-text);
 	font-weight: 300;
+}
+
+
+.homePage__services--grid-cta-box {
+	
+	grid-column: 2/3;
+	
+	display: flex;
+	
+	align-items: center;
+	justify-content: center;
+}
+
+
+.homePage__services-cta:link,
+.homePage__services-cta:visited{
+	
+	text-decoration: none;
+	
+	color: var(--color-text);
+	
+	font-size: 2rem;
+	
+	border-bottom: 1px solid var(--color-text-muted-lt);
+	padding-bottom: 3px;	
+	
+	transition: all .2s;
+	
+}
+
+.homePage__services-cta:hover,
+.homePage__services-cta:active{
+	
+	transform: scale(1.06) translateY(-2%);
+	
 }
 
 
@@ -4509,7 +4541,7 @@ border-bottom: 4px solid var(--color-secondary);
 			rgba(110, 170, 255, 0.05) 50%,
 			rgba(110, 170, 255, 0) 70%
 		),
-		#f9fbff;	
+			#fff;
 		
 	}
 	
@@ -4607,7 +4639,7 @@ border-bottom: 4px solid var(--color-secondary);
 			rgba(110, 170, 255, 0.05) 50%,
 			rgba(110, 170, 255, 0) 60%
 		),
-		#f9fbff;
+			#fff;
 		
 	}
 	
@@ -4832,7 +4864,7 @@ border-bottom: 4px solid var(--color-secondary);
 			rgba(110, 170, 255, 0.05) 50%,
 			rgba(110, 170, 255, 0) 60%
 		),
-		#f9fbff;
+			#fff;
 		
 	}
 	
@@ -5171,6 +5203,15 @@ li.portfolio--skills-list-item {
 	@media (max-width: 51.75em) {
 		
 		
+	.homePage__services-cta:link,
+.homePage__services-cta:visited{
+	
+		
+	font-size: 1.6rem;
+
+}
+		
+		
 .header--box {
 
 gap: 4rem;
@@ -5358,7 +5399,7 @@ radial-gradient(25rem 25rem at 45% 72.5%,
 	rgba(110, 170, 255, 0.05) 50%,
 	rgba(110, 170, 255, 0) 70%
 ),
-#f9fbff;
+	#fff;
 
 }
 	
@@ -5715,6 +5756,10 @@ font-size: var(--text-h4);
     justify-content: center;
 }
 
+/* .services__heading-box , .process__heading-box{
+    text-align: center;
+} */
+
 
 }
 
@@ -5754,7 +5799,7 @@ font-size: var(--text-h4);
 			rgba(110, 170, 255, 0.05) 50%,
 			rgba(110, 170, 255, 0) 70%
 		),
-		#f9fbff;
+			#fff;
 		
 	}
 	
@@ -5762,8 +5807,9 @@ font-size: var(--text-h4);
 .homePage__services--grid {
 	
 
-  grid-template-columns: 1fr;
-	justify-content: center;
+  display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
 
 }
 
@@ -5885,7 +5931,7 @@ gap: 4rem;
 			rgba(110, 170, 255, 0.05) 50%,
 			rgba(110, 170, 255, 0) 80%
 		),
-		#f9fbff;
+			#fff;
 		
 	}
 		
@@ -5977,11 +6023,11 @@ height: auto;
 padding: 2rem 1.4rem ;
 }
 
-.process__heading-box , .services__heading-box {
+/* .process__heading-box , .services__heading-box {
 	
 	text-align: center;
 }
-
+ */
 
 
 	.content-hidden{
@@ -6407,7 +6453,7 @@ display: none;
 			rgba(110, 170, 255, 0.05) 50%,
 			rgba(110, 170, 255, 0) 60%
 		),
-		#f9fbff;
+			#fff;
 		
 	}
 	
@@ -6676,6 +6722,11 @@ padding: 1.6rem .8rem ;
 @media (max-width: 30.62em) {
 	
 	
+	    .homePage__services--grid {
+        
+        padding-top: 1.8rem;
+    }
+	
 .homePage-grid {
  
   gap: 2rem;
@@ -6735,7 +6786,7 @@ padding: 1.6rem .8rem ;
 			rgba(110, 170, 255, 0.05) 50%,
 			rgba(110, 170, 255, 0) 60%
 		),
-		#f9fbff;
+			#fff;
 		
 	}
 	
@@ -6821,6 +6872,11 @@ h2.section-heading{
 
 
 @media (max-width: 26.5em) {
+	
+	
+.process__heading-box h2 {
+ padding: 0 0 .5rem
+}
 
   .services__heading-box {
     margin-bottom: 0rem;
@@ -7069,6 +7125,15 @@ margin-bottom: 1rem;
 
 	@media (max-width: 23.75em) {
 		
+.process__heading-box p {
+	font-size: 1.3rem;
+
+}
+
+.process__heading-box h2, .services__heading-box h2 {
+	font-size: var(--text-lg);
+}
+		
 .homePage__hero--heading-block {
 	margin-bottom: 0;
 }
@@ -7183,7 +7248,7 @@ padding: 0.25rem 2.2em .35rem;
 			rgba(110, 170, 255, 0.05) 45%,
 			rgba(110, 170, 255, 0) 55%
 		),
-		#f9fbff;
+			#fff;
 		
 	}
 	
