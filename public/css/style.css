@@ -7069,8 +7069,10 @@ margin-bottom: 1rem;
 
 	@media (max-width: 23.75em) {
 		
-		
-		
+.homePage__hero--heading-block {
+	margin-bottom: 0;
+}
+
 .aboutPage-heading--box h1 {
     font-size: 1.8rem;
 		padding-top: 1.4rem;
