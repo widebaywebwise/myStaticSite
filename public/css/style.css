@@ -1673,7 +1673,7 @@ ul.socials-box {
 	max-width: 69rem;
 	line-height: 1.25;
 	/* letter-spacing: 1px; */
-	color: var(--color-text-muted-dkest);
+	color: var(--color-text-muted-dk);
 }
 
 
@@ -6421,19 +6421,19 @@ display: none;
 
 }
 	
-	
-	    .homePage--sub-heading {
-      margin-bottom: .75rem;
-    }
-	
-	    .homepPage-tagline {
-        display: none;
-       
-    }
-	
-	
-		.homePage__hero {	
-	
+
+  .homePage--sub-heading {
+  margin-bottom: .75rem;
+}
+
+  .homepPage-tagline {
+    display: none;
+   
+}
+
+
+.homePage__hero {	
+
 	
 		background:
 		radial-gradient(1px 1px at 52% 42.5%,
@@ -6648,7 +6648,7 @@ padding: 1.6rem .8rem ;
 
 .servicesPage-heading-box {
 	
-    padding: 3.2rem 0;
+    padding: 3.2rem 0 1.6rem;
    
     font-size: 1.8rem;;
   
@@ -6660,7 +6660,12 @@ padding: 1.6rem .8rem ;
 		
 .servicesPage-heading-box p:last-child {
    margin-bottom: 1.4rem;
-}    
+}  
+
+.servicesPage-heading-box p {
+  font-size:1.4rem;
+  
+}
 
 .servicePage--grid {
        
