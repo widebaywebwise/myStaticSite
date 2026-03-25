@@ -8,9 +8,9 @@ const authController = require('./../controllers/authController');
 /// Login page
 
 
-router.get('/login-page', viewController.loginPage);
+// router.get('/login-page', viewController.loginPage);
 
-router.get('/reset-password-page', viewController.resetPasswordPage);
+// router.get('/reset-password-page', viewController.resetPasswordPage);
 
 
 
@@ -31,7 +31,7 @@ router.get('/static/services', viewController.getServicesPage);
 
 // /// Portfolio
 
-router.get('/static/about', viewController.getPortfolioPage);
+router.get('/static/about', viewController.getAboutPage);
 
 
 

@@ -67,35 +67,35 @@ exports.getServicesPage = catchAsync(async (req, res, next) => {
 
 
 
-//------------------- Portfolio Page ------------------------//
-
-
-exports.getPortfolioPage = catchAsync(async (req, res, next) => {
-
-	res.status(200).render('portfolio', {
-
-		pageTitle: 'Website Design Portfolio | Wide Bay & Bundaberg | Widebay Web Wise',
-		pageDescription:
-			'View recent website projects and examples of custom-built work from Widebay Web Wise. Professional websites designed for local businesses across Wide Bay, including Bundaberg, Hervey Bay, and Maryborough.',
-		canonicalUrl: `${process.env.CANONICAL_URL}/static/about`
-
-	});
-});
-
 
 //------------------- About Page ------------------------//
-
 
 exports.getAboutPage = catchAsync(async (req, res, next) => {
 
 	res.status(200).render('about', {
 
-		pageTitle: 'About Widebay Web Wise | Local Website Design in Wide Bay',
+		pageTitle: 'About Widebay Web Wise | Bundaberg Web Design',
 		pageDescription:
-			'Learn more about Widebay Web Wise and our practical approach to building custom websites for local businesses across Wide Bay, including Bundaberg, Hervey Bay, and Maryborough.',
+			'About Widebay Web Wise, a Bundaberg web designer building custom websites for local businesses across the Wide Bay region, including Hervey Bay and Maryborough.',
 		canonicalUrl: `${process.env.CANONICAL_URL}/static/about`
+
 	});
 });
+
+
+
+//------------------- Portfolio Page ------------------------//
+
+// exports.getPortfolioPage = catchAsync(async (req, res, next) => {
+
+// 	res.status(200).render('about', {
+
+// 		pageTitle: 'About Widebay Web Wise | Local Website Design in Wide Bay',
+// 		pageDescription:
+// 			'Learn more about Widebay Web Wise and our practical approach to building custom websites for local businesses across Wide Bay, including Bundaberg, Hervey Bay, and Maryborough.',
+// 		canonicalUrl: `${process.env.CANONICAL_URL}/static/about`
+// 	});
+// });
 
 
 //------------------- Contact Page ------------------------//
