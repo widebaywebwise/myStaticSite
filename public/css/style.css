@@ -968,6 +968,7 @@ ul.socials-box {
 			
 			display: flex;
 			gap: 1rem;
+			margin-bottom: 1.6rem;
 		
 		}
 
@@ -7441,7 +7442,10 @@ padding: 0.25rem 2.2em .35rem;
      margin-top: 0;
     }
 	
-
+.flex-heading {
+  
+    margin-bottom: 1.1rem;
+}
 
 }
 	
