@@ -2,7 +2,7 @@ doctype html
 
 html(lang="en") 
 	head
-		if gaMeasurementId
+		if process.env.NODE_ENV === 'production' && gaMeasurementId
 			script(async src=`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`)
 			script.
 				window.dataLayer = window.dataLayer || [];
@@ -55,7 +55,8 @@ html(lang="en")
 		//-- Preloads (critical assets)		
 		
 			
-		link(rel='shortcut icon' type='image/png'  sizes="180x180"  href=favicon || '/img/favicons/defaultfavicon.png')
+		
+		link(rel='shortcut icon' type='image/png'  sizes="180x180"  href=favicon || '/img/favicons/favicon.png')
 		
 		title= pageTitle || 'Wide Bay Web Designer & Developer | Widebay Web Wise'
 		
