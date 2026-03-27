@@ -5,15 +5,6 @@ const viewController = require('./../controllers/viewController');
 const authController = require('./../controllers/authController');
 
 
-/// Login page
-
-
-// router.get('/login-page', viewController.loginPage);
-
-// router.get('/reset-password-page', viewController.resetPasswordPage);
-
-
-
 
 /// Homepage
 
