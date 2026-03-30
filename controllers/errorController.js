@@ -39,7 +39,7 @@ const sendErrorDev = (err, req, res) => {
 
 	if (req.originalUrl.startsWith('/api')) {
 
-		return res.status(err.statusCode).json({
+		return res.status(err.statusCode || 500).json({
 			status: err.status,
 			error: err,
 			message: err.message,
@@ -67,7 +67,7 @@ const sendErrorDev = (err, req, res) => {
 
 	if (user.role === 'user') {
 
-		return res.status(err.statusCode).render('error', {
+		return res.status(err.statusCode || 500).render('error', {
 
 			title: "Something went wrong....",
 			errMsg: err.message
@@ -79,7 +79,7 @@ const sendErrorDev = (err, req, res) => {
 
 	} else {
 
-		return res.status(err.statusCode).render('admin/be_error', {
+		return res.status(err.statusCode || 500).render('admin/be_error', {
 			title: "Something went wrong....",
 			errMsg: err.message
 
@@ -97,7 +97,7 @@ const sendErrorProd = (err, req, res) => {
 
 		if (err.isOperational) {
 
-			return res.status(err.statusCode).json({
+			return res.status(err.statusCode || 500).json({
 				status: err.status,
 				message: err.message
 
@@ -114,7 +114,7 @@ const sendErrorProd = (err, req, res) => {
 
 	if (err.isOperational) {
 
-		return res.status(err.statusCode).render('error', {
+		return res.status(err.statusCode || 500).render('error', {
 
 			title: "Something went wrong....",
 			errMsg: err.message
@@ -127,12 +127,14 @@ const sendErrorProd = (err, req, res) => {
 	///			Conditional based on user role			///
 
 
+	const user = req.user || null;
+
 	/// Render front end error page
 
 
-	if (req.user.role === 'user') {
+	if (!user || user.role === 'user') {
 
-		return res.status(err.statusCode).render('error', {
+		return res.status(err.statusCode || 500).render('error', {
 
 			title: "Something went wrong....",
 			errMsg: 'Please try again later'
@@ -143,7 +145,7 @@ const sendErrorProd = (err, req, res) => {
 
 	} else {
 
-		return res.status(err.statusCode).render('admin/be_error', {
+		return res.status(err.statusCode || 500).render('admin/be_error', {
 
 			title: "Something went wrong....",
 			errMsg: 'Please try again later'
