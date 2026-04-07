@@ -5356,6 +5356,10 @@ padding: 1.6rem .8rem ;
 
 @media (max-width: 30.62em) {
 	
+	    .homePage__hero--heading-block {
+        padding: 2.4rem 1rem 1rem;
+    }
+	
 	
 .servicesPage--link p {
  
@@ -5921,7 +5925,7 @@ line-height: 1.15;
 
 
 .homePage--sub-heading {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
  
 	padding: 0 1rem;
 	margin-bottom: 0;
@@ -5986,7 +5990,7 @@ padding: 0.5rem 1em .5rem 2rem;
 
   .homePage--heading,
   .flex-heading h1 {
-    font-size: 2.9rem;
+    font-size: 2.8rem;
     
   }
 
