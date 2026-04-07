@@ -5826,6 +5826,10 @@ margin-bottom: 1rem;
 .faq {
     padding: 0 3rem;
 }
+
+.homePage--heading, .flex-heading h1 {
+        font-size: 3rem;
+    }
 		
 
 }
