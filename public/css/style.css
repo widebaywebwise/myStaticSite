@@ -567,7 +567,8 @@ span.user__cart--span{
 	#0b2f6d 0%,
 	#0e3880 45%,
 	#15479c 100%
-);
+	
+		 );
 		 
 		 
 
@@ -913,36 +914,27 @@ background-size: 10px 10px;
 		
 .homePage__hero {	
 	
-	padding: 1.8rem 0 7.2rem;
+	/* padding: 1.8rem 0 7.2rem; */
+	padding: 1.8rem 0 8rem;
 	
 	width: 100vw;
 	margin-left: calc(-50vw + 50%);
 
-	 
-		 /* background-color: var(--color-primary-dark); */
-		 
-		 /* background: linear-gradient(
-	90deg,
-	#0b2f6d 0%,
-	#0e3880 45%,
-	#15479c 100%
-);
-		  */
-			
 /* clip-path: polygon(
-	0 0,
-	100% 0,
-	100% 100%,
-	0 92%
-); */
-
-clip-path: polygon(
 	0 0,
 	100% 0,
 	100% 100%,
 	85% 100%,
 	18% 89%,
 	0 89%
+); */
+
+clip-path: polygon(
+	0 0,
+	100% 0,
+	100% 100%,
+
+	0 90%
 );
 
 
