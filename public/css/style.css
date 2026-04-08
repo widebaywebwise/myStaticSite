@@ -621,6 +621,11 @@ padding-bottom: 1.8rem;
 	
 	flex:0 0 20%;
 	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	
 }
 
 	.header__cta--box{
@@ -633,7 +638,7 @@ padding-bottom: 1.8rem;
 .header__logo{
 	display: flex;
 	align-items: center;
-width: 82.5%;
+width: 80%;
 
 
 }
