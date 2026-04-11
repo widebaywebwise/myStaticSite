@@ -2969,6 +2969,8 @@ font-size: var(--text-body);
 	border: 1px solid #cfd7e6;
 	border-radius: 8px;
 	background-color: #fff;
+	
+	font-size: 1.1rem;
 }
 
 
@@ -3001,6 +3003,8 @@ font-size: var(--text-body);
   background-color: var(--color-secondary);
   color: var(--color-text-secondary);
   cursor: pointer;
+	
+	
 	
 	transition: all .2s;
 }
