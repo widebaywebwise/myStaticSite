@@ -35,7 +35,7 @@
 	/* --- Accent --- */
 	
   --color-secondary: #fc9e5b;
-  --color-secondary-lt: rgb(254, 174, 117);
+  --color-secondary-lt: #feae75;
   --color-secondary-ltest: #f9cbab;
   --color-secondary-ltest-1: #fff5ef;
   --color-secondary-dker: #e38e52;
@@ -2896,11 +2896,12 @@ font-size: var(--text-body);
 	/* grid-template-columns: 1fr 1fr; */
 	grid-template-columns: 8fr 9fr;
 	
-	background-color: var(--color-primary-lightest);
+	/* background-color: var(--color-primary-lightest); */
+	background: var(--gradient-navy);
 	gap: 2rem;
 	border-radius: 18px;
 	overflow: hidden;
-	/* box-shadow: 2px 4px 9px rgba(14, 56, 128, 0.2); */
+
 	
 }
 
@@ -2941,6 +2942,8 @@ font-size: var(--text-body);
 	display: flex;
 	flex-direction: column;
 	gap: .5rem;
+	
+	color: var(--color-text-lt-blue);
 	
 }
 
@@ -3002,6 +3005,12 @@ font-size: var(--text-body);
 	transition: all .2s;
 }
 
+.contact-form--submit-btn p{
+
+	color: var(--color-text-lt-blue);
+
+}
+
 .contact-form--btn:hover {
 	
 
@@ -3017,7 +3026,7 @@ font-size: var(--text-body);
 	font-size: 1.3rem;
 	text-align: center;
 
-	color: var(--color-text-muted-dk);
+	color: var(--color-text-lt-blue);
 	padding-bottom: 1rem;
 
 	
