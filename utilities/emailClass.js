@@ -75,7 +75,7 @@ module.exports = class Email {
 					firstname: this.firstname,
 					url: this.url,
 					subject,
-					logoUrl: `${process.env.CANONICAL_URL}/img/logo/email-logo.png`,
+					logoUrl: `${process.env.CANONICAL_URL}/img/logo/new-logo.png`,
 					...data
 				}
 			);
