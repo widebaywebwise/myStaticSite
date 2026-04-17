@@ -5883,6 +5883,7 @@ margin-bottom: 1rem;
 
 .aboutPage-heading--box h1 {
     font-size: 1.7rem;
+		padding: 0;
 		/* padding-top: 1.4rem; */
 }
 
