@@ -5330,7 +5330,7 @@ padding: 1.6rem .8rem ;
 }
 
     .aboutPage {
-    padding-top: 1rem;
+    padding: 2.2rem 0 1.1rem;
     margin-bottom: 2rem;
 }
 
@@ -5759,12 +5759,13 @@ font-size: 1.4rem;
 }
 
 .aboutPage {
-  padding-top: 0;
+  padding: 1rem 0 0;
   margin-bottom: 0;
 }
 
 .aboutPage-heading--box h1 {
         font-size: 1.8rem;
+				padding: 1rem 0;
     }
 		
 	    .aboutPage-heading--box h2 {
@@ -5882,7 +5883,7 @@ margin-bottom: 1rem;
 
 .aboutPage-heading--box h1 {
     font-size: 1.7rem;
-		padding-top: 1.4rem;
+		/* padding-top: 1.4rem; */
 }
 
 .portfolio--text-box-header {
