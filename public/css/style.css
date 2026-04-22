@@ -2912,8 +2912,8 @@ font-size: var(--text-body);
 	height: auto;
 	object-fit: cover;
 	display: block;
-	
-	aspect-ratio: 10/13;
+
+	aspect-ratio: 10/14;
 	
 
 }
@@ -2963,7 +2963,7 @@ font-size: var(--text-body);
 .contact-form--row input,
 .contact-form--row select,
 .contact-form--row textarea {
-	width: 100%;
+	width: 98%;
 	padding: 1rem 1.2rem;
 	font: inherit;
 	border: 1px solid #cfd7e6;
@@ -3835,7 +3835,7 @@ li.portfolio--skills-list-item {
 .contact-form--img {
    
   
-       aspect-ratio: 7 / 13;
+       aspect-ratio: 9 / 13;
 }
 
     .portfolio--tags p {
@@ -4400,7 +4400,7 @@ font-size: var(--text-h4);
 }
 .contact-form--img {  
   
-       aspect-ratio: 6 / 13;
+       aspect-ratio: 9 / 13;
 }
 
 .contact-form--form {
@@ -4418,6 +4418,18 @@ font-size: var(--text-h4);
     text-align: center;
 } */
 
+.contact-form {
+  
+    gap: .85rem;
+}
+
+.contact-form-grid {
+ 
+    grid-template-columns: 9fr 9fr;
+  
+    gap: .85rem;
+   
+}
 
 }
 
@@ -4428,8 +4440,7 @@ font-size: var(--text-h4);
 @media (max-width: 46.5em) {
 	
 		
-
-	
+  
 	
 		.homePage__main {
     padding: 0 4rem ;   
@@ -4492,7 +4503,8 @@ gap: 4rem;
 	.contact-form--img {
    
   
-       aspect-ratio: 5 / 13;
+       aspect-ratio: 7 / 13;
+			 object-position: left;
 }
 
 .contact-form--form {
@@ -4517,6 +4529,10 @@ gap: 4rem;
  
 }
 
+    .contact-form-grid {
+       
+        gap: 1.2rem;
+    }
 
 		.aboutPage-container {
     
@@ -4534,6 +4550,12 @@ gap: 4rem;
         padding: .5rem 1rem;
         font-size: 1.15rem;
     }
+		
+.contact-form-box {
+	
+	padding: 0 8rem;
+
+}
 }
 
 	
@@ -4944,13 +4966,23 @@ display: none;
  
   
     grid-template-columns: 1fr;
+		border-radius: 0;
   
 }
 
+.contact-form--img--box {
+	
+	overflow: hidden;
+   
+  
+     
+}
 .contact-form--img {
    
   
        aspect-ratio: 15 / 10;
+			 object-position: top;
+			 overflow: hidden;
 }
 
 .contact-form--form {
