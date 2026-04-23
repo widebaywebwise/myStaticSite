@@ -2913,7 +2913,7 @@ font-size: var(--text-body);
 	object-fit: cover;
 	display: block;
 
-	aspect-ratio: 10/14;
+	aspect-ratio: 9/13;
 	
 
 }
@@ -3466,7 +3466,7 @@ border-bottom: 4px solid var(--color-secondary);
 .contact-form--img {
    
   
-       aspect-ratio: 10 / 13;
+       aspect-ratio: 8 / 11;
 }
 .portfolio--tags p{
 	
@@ -3848,7 +3848,7 @@ li.portfolio--skills-list-item {
 .contact-form--img {
    
   
-       aspect-ratio: 9 / 13;
+       aspect-ratio: 6/ 10;
 }
 
     .portfolio--tags p {
@@ -4413,7 +4413,7 @@ font-size: var(--text-h4);
 }
 .contact-form--img {  
   
-       aspect-ratio: 9 / 13;
+       aspect-ratio: 6/10;
 }
 
 .contact-form--form {
