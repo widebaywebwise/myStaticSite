@@ -4749,7 +4749,7 @@ gap: 4rem;
 }
 
     .aboutPage--img {
-        width: 85%;
+        width: 90%;
        
         padding: 2rem 0 ;
       
@@ -5180,8 +5180,12 @@ display: none;
 	
 	    .homePage--heading, .flex-heading h1 {
         font-size: 3.6rem;
+				
     }
+		
 	
+	 
+			
 .homePage__hero {
     padding: 2rem;
    
@@ -5700,7 +5704,18 @@ h2.section-heading{
 	margin-top: -4px;
 }
 
+	.homePage--heading {
+    font-size: 3.2rem;
+    
+  }
 	
+	.flex-heading span{
+		
+		font-size: 3.6rem;
+		margin-bottom: .35rem;
+		
+	}
+		
 
 
 }
@@ -6044,6 +6059,18 @@ margin-bottom: 1rem;
         font-size: 3rem;
     }
 		
+.homePage--heading {
+    font-size: 2.8rem;
+    
+  }
+	
+	.flex-heading span{
+		
+		font-size: 3rem;
+		margin-bottom: .35rem;
+		
+	}
+		
 
 }
 
@@ -6116,7 +6143,7 @@ gap: 2rem;
 
 .aboutPage-container {
     gap: 4.8rem;
-    padding: 1.2rem 3rem 0;
+    padding: 1.2rem 2rem 0;
 }
 
 .portfolio--heading-badge h4 {
@@ -6215,11 +6242,17 @@ padding: 0.5rem 1em .5rem 2rem;
     padding: 0 1rem;
   }
 
-  .homePage--heading,
-  .flex-heading h1 {
+  .homePage--heading {
     font-size: 2.8rem;
     
   }
+	
+	.flex-heading span{
+		
+		font-size: 3rem;
+		margin-bottom: .5rem;
+		
+	}
 
   .process__step-content h3 {
       font-size: 1.6rem;
