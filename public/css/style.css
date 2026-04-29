@@ -939,7 +939,7 @@ clip-path: polygon(
 	100% 0,
 	100% 100%,
 
-	0 90%
+	0 95%
 );
 
 
@@ -3009,16 +3009,25 @@ font-size: var(--text-body);
 }
 
 
-.contact-form--img{
+.contact-form--img , .contact-form--img-mobile{
 	
 	width: 100%;
 	height: auto;
 	object-fit: cover;
 	display: block;
 
-	aspect-ratio: 9/13;
 	
+}
 
+.contact-form--img {
+	
+	aspect-ratio: 9/13;	
+	
+}
+
+.contact-form--img-mobile{
+	
+	display:none;
 }
 
 
@@ -5150,7 +5159,16 @@ display: none;
     .header--box {
         gap: 3rem;
     }
+		
+		.contact-form--img-mobile{
+			
+			display: block;
+		}
 
+		.contact-form--img{
+			
+			display: none;
+		}
 }
 	
 
@@ -5790,7 +5808,7 @@ h2.section-heading{
 
 			
  h3.faq-heading {
-	font-size: 1.6rem;
+	font-size: 2rem;
 	
 	margin-bottom: 1.6rem;
 	
@@ -6232,7 +6250,16 @@ padding: 0.5rem 1em .5rem 2rem;
         max-width: 90%;
     }
 
+    .contact-form-grid {
+        gap: 0;
+    }
+		
+.contact-form--btn {
 
+	padding: .5rem 1.5rem;
+	font-size: 1.3rem;
+
+}
  
 
 }
