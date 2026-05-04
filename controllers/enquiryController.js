@@ -10,6 +10,23 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 
 		return res.redirect(303, '/enquiry-success');
 	}
+
+	/// Block SEO messages
+
+	const message = (req.body.message || '').toLowerCase();
+
+	if (message.includes('seo')) {
+
+		console.log('SEO spam enquiry blocked:', {
+			time: new Date().toISOString(),
+			name: req.body.name,
+			email: req.body.email
+		});
+
+		return res.redirect(303, '/enquiry-success');
+	}
+
+
 	const newEnquiry = await Enquiry.create({
 
 		name: req.body.name,
