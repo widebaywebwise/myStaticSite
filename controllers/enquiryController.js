@@ -8,111 +8,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 
 	if (req.body.website && req.body.website.trim() !== '') {
 
-		return res.redirect(303, '/enquiry-success');
-	}
-
-
-	/// Block just SEO in messages
-
-	// const message = (req.body.message || '').toLowerCase();
-
-	// if (message.includes('seo')) {
-
-	// 	console.log('SEO spam enquiry blocked:', {
-	// 		time: new Date().toISOString(),
-	// 		name: req.body.name,
-	// 		email: req.body.email
-	// 	});
-
-	// 	return res.redirect(303, '/enquiry-success');
-	// }
-
-
-
-	/// Block Specific SEO in messages
-
-	// const message = (req.body.message || '').toLowerCase();
-
-	// const seoSpamPhrases = [
-	// 	'seo services',
-	// 	'improve your seo',
-	// 	'boost your seo',
-	// 	'seo strategy',
-	// 	'seo expert',
-	// 	'seo agency',
-	// 	'search engine optimization',
-	// 	'rank higher',
-	// 	'ranking well',
-	// 	'search rankings',
-	// 	'visibility on google',
-	// 	'backlinks',
-	// 	'domain authority',
-	// 	'increase your traffic',
-	// 	'increase traffic',
-	// 	'generate more leads',
-	// 	'guest post',
-	// 	'link building',
-	// 	'first page of google',
-	// 	'google rankings'
-	// ];
-
-	// const isSeoSpam = seoSpamPhrases.some((phrase) =>
-	// 	message.includes(phrase)
-	// );
-
-	// if (isSeoSpam) {
-
-	// 	console.log('SEO spam enquiry blocked:', {
-	// 		time: new Date().toISOString(),
-	// 		name: req.body.name,
-	// 		email: req.body.email
-	// 	});
-
-	// 	return res.redirect(303, '/enquiry-success');
-	// }
-
-	const message = (req.body.message || '').toLowerCase();
-
-	const containsOwnDomain =
-		message.includes('widebaywebwise.com.au');
-
-	const seoSpamPhrases = [
-		'seo services',
-		'improve your seo',
-		'boost your seo',
-		'seo strategy',
-		'seo expert',
-		'seo agency',
-		'search engine optimization',
-		'rank higher',
-		'rank your website',
-		'ranking well',
-		'search rankings',
-		'visibility on google',
-		'backlinks',
-		'domain authority',
-		'increase your traffic',
-		'increase traffic',
-		'generate more leads',
-		'guest post',
-		'link building',
-		'first page of google',
-		'1st page of google',
-		'google rankings',
-		'google top page',
-		'optimize your site',
-		'seo packages',
-		'pricing and proposals',
-		'may i send you seo'
-	];
-
-	const isSeoSpam = seoSpamPhrases.some((phrase) =>
-		message.includes(phrase)
-	);
-
-	if (containsOwnDomain || isSeoSpam) {
-
-		console.log('SEO spam enquiry blocked:', {
+		console.log('Honeypot spam enquiry blocked:', {
 			time: new Date().toISOString(),
 			name: req.body.name,
 			email: req.body.email
@@ -120,6 +16,44 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 
 		return res.redirect(303, '/enquiry-success');
 	}
+
+
+
+	const message = (req.body.message || '').toLowerCase();
+
+	const seoSpamPhrases = [
+		'seo services',
+		'improve your seo',
+		'seo agency',
+		'search engine optimization',
+		'backlinks',
+		'domain authority',
+		'guest post',
+		'link building',
+		'seo packages',
+		'may i send you seo'
+	];
+
+	const matchedSpamPhrase = seoSpamPhrases.find((phrase) =>
+		message.includes(phrase)
+	);
+
+	if (matchedSpamPhrase) {
+
+		console.log('SEO spam enquiry blocked:', {
+			time: new Date().toISOString(),
+			name: req.body.name,
+			email: req.body.email,
+			matchedPhrase: matchedSpamPhrase
+		});
+
+		return res.redirect(303, '/enquiry-success');
+	}
+
+
+
+
+
 
 	const newEnquiry = await Enquiry.create({
 
