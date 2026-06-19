@@ -31,7 +31,12 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		'guest post',
 		'link building',
 		'seo packages',
-		'may i send you seo'
+		'may i send you seo',
+		'seo performance',
+		'seo support',
+		'search visibility',
+		'improve search',
+		'improve seo'
 	];
 
 	const matchedSpamPhrase = seoSpamPhrases.find((phrase) =>
