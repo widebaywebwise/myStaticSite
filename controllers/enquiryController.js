@@ -17,9 +17,24 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		return res.redirect(303, '/enquiry-success');
 	}
 
+	const normalizedName = (req.body.name || '')
+		.toLowerCase()
+		.replace(/[^a-z]/g, '');
+
+	if (normalizedName === 'robertpraks') {
+		console.log('Known spam name blocked:', {
+			time: new Date().toISOString(),
+			name: req.body.name,
+			email: req.body.email
+		});
+
+		return res.redirect(303, '/enquiry-success');
+	}
+
 
 
 	const message = (req.body.message || '').toLowerCase();
+
 
 	const seoSpamPhrases = [
 		'seo services',
@@ -39,9 +54,11 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		'improve seo'
 	];
 
+
 	const matchedSpamPhrase = seoSpamPhrases.find((phrase) =>
 		message.includes(phrase)
 	);
+
 
 	if (matchedSpamPhrase) {
 
@@ -54,8 +71,6 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 
 		return res.redirect(303, '/enquiry-success');
 	}
-
-
 
 
 
