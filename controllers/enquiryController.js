@@ -22,11 +22,6 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		.replace(/[^a-z]/g, '');
 
 	if (normalizedName === 'robertpraks') {
-		console.log('Known spam name blocked:', {
-			time: new Date().toISOString(),
-			name: req.body.name,
-			email: req.body.email
-		});
 
 		return res.status(204).end();
 	}
