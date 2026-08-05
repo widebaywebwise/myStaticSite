@@ -14,7 +14,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 			email: req.body.email
 		});
 
-		return res.redirect(303, '/enquiry-success');
+		return res.status(204).end();
 	}
 
 	const normalizedName = (req.body.name || '')
@@ -28,7 +28,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 			email: req.body.email
 		});
 
-		return res.redirect(303, '/enquiry-success');
+		return res.status(204).end();
 	}
 
 
@@ -69,7 +69,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 			matchedPhrase: matchedSpamPhrase
 		});
 
-		return res.redirect(303, '/enquiry-success');
+		return res.status(204).end();
 	}
 
 
