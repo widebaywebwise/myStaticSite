@@ -23,7 +23,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 
 	if (normalizedName === 'robertpraks') {
 
-		return res.status(204).end();
+		return res.status(403).end();
 	}
 
 
