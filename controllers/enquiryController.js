@@ -3,29 +3,6 @@ const catchAsync = require('./../utilities/catchAsync');
 const Email = require('./../utilities/emailClass');
 
 
-const blockedEnquiryNames = [
-	'robertpraks'
-];
-
-exports.blockKnownSpam = (req, res, next) => {
-
-	const name = (req.body.name || '')
-		.toLowerCase()
-		.replace(/[^a-z]/g, '');
-
-	if (blockedEnquiryNames.includes(name)) {
-
-		console.log('Known spam name blocked:', {
-			time: new Date().toISOString(),
-			name: req.body.name,
-			email: req.body.email
-		});
-
-		return res.status(204).end();
-	}
-
-	next();
-};
 
 exports.createEnquiry = catchAsync(async (req, res, next) => {
 
