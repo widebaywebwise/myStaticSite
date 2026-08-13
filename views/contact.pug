@@ -47,7 +47,15 @@ block content
 								label(for="website") Website
 								input(type="text" name="website" id="website" tabindex="-1" autocomplete="off")
 								
-
+							.contact-form--row
+								label(for="location") Where are you based?
+								select#location(name="location" required)
+									option(value="" disabled selected) Select your area
+									option(value="bundaberg") Bundaberg
+									option(value="hervey-bay") Hervey Bay
+									option(value="maryborough") Maryborough
+									option(value="bargara") Bargara
+									option(value="wide-bay") Other Wide Bay area
 									
 							.contact-form--row 
 								label(for="service") Interested In

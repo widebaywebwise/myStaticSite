@@ -69,6 +69,18 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		return res.status(204).end();
 	}
 
+	const allowedLocations = [
+		'bundaberg',
+		'hervey-bay',
+		'maryborough',
+		'bargara',
+		'wide-bay'
+	];
+
+	if (!allowedLocations.includes(req.body.location)) {
+		return res.status(204).end();
+	}
+
 
 
 
@@ -77,7 +89,8 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		name: req.body.name,
 		email: req.body.email,
 		service: req.body.service,
-		message: req.body.message
+		message: req.body.message,
+		location: req.body.location,
 	});
 
 

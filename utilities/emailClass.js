@@ -16,6 +16,7 @@ module.exports = class Email {
 		this.email = user.email;
 		this.service = user.service;
 		this.message = user.message;
+		this.location = user.location;
 	}
 
 
@@ -140,6 +141,7 @@ module.exports = class Email {
 			name: this.name,
 			email: this.email,
 			service: this.service,
+			location: this.location,
 			message: this.message
 		});
 	}

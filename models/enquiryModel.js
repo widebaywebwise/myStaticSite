@@ -30,6 +30,20 @@ const enquirySchema = new mongoose.Schema({
 		]
 	},
 
+	location: {
+		type: String,
+		required: [true, 'Please select your location'],
+		trim: true,
+		lowercase: true,
+		enum: [
+			'bundaberg',
+			'hervey-bay',
+			'maryborough',
+			'bargara',
+			'wide-bay'
+		]
+	},
+
 
 	message: {
 		type: String,
