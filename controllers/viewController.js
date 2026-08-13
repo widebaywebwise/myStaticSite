@@ -108,7 +108,7 @@ exports.getContactPage = catchAsync(async (req, res, next) => {
 		pageTitle: 'Contact Widebay Web Wise | Website Design in Wide Bay',
 		pageDescription:
 			'Get in touch with Widebay Web Wise about a custom website for your business. Serving local businesses across Wide Bay, including Bundaberg, Hervey Bay, and Maryborough.',
-		canonicalUrl: `${process.env.CANONICAL_URL}/static/contact`
+		canonicalUrl: `${process.env.CANONICAL_URL}/contact`
 	});
 });
 

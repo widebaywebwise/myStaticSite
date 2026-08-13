@@ -28,7 +28,7 @@ router.get('/static/about', viewController.getAboutPage);
 
 /// Contact
 
-router.get('/static/contact', viewController.getContactPage);
+router.get('/contact', viewController.getContactPage);
 
 
 ///			Enquiry Success Route 
