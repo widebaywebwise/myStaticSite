@@ -23,9 +23,9 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		.toLowerCase()
 		.replace(/[^a-z]/g, '');
 
-	if (normalizedName === 'robertpraks') {
+	if (normalizedName === 'robertpraks' || normalizedName === 'maryemema') {
 
-		return res.status(403).end();
+		return res.status(204).end();
 	}
 
 
@@ -48,7 +48,11 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 		'seo support',
 		'search visibility',
 		'improve search',
-		'improve seo'
+		'improve seo',
+		'xevil 7.0',
+		'xevil',
+		'bitcoinfaucet',
+		'captcha',
 	];
 
 
