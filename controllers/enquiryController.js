@@ -16,7 +16,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 			email: req.body.email
 		});
 
-		return res.status(204).end();
+		return res.status(403).end();
 	}
 
 	const normalizedName = (req.body.name || '')
@@ -25,7 +25,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 
 	if (normalizedName === 'robertpraks' || normalizedName === 'maryemema') {
 
-		return res.status(204).end();
+		return res.status(403).end();
 	}
 
 
@@ -70,7 +70,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 			matchedPhrase: matchedSpamPhrase
 		});
 
-		return res.status(204).end();
+		return res.status(403).end();
 	}
 
 	const allowedLocations = [
@@ -82,7 +82,7 @@ exports.createEnquiry = catchAsync(async (req, res, next) => {
 	];
 
 	if (!allowedLocations.includes(req.body.location)) {
-		return res.status(204).end();
+		return res.status(403).end();
 	}
 
 
